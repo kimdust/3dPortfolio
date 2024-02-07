@@ -1,7 +1,3 @@
-*.ai
-
-images/blender/OBJ
-
 /node_modules
 /.pnp
 .pnp.js

@@ -1,0 +1,75 @@
+@import "variables", "mixins", "reset";
+
+body {
+  margin: 0;
+  background-color: #eae8e0;
+  #main {
+    position: relative;
+    h1 {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 120px;
+      font-weight: 600;
+      letter-spacing: -5px;
+      margin-top: 250px;
+      border: 3px solid black;
+      padding: 0 100px;
+      border-radius: 100px;
+      z-index: 1;
+    }
+    .icon {
+      .main_icon {
+        position: absolute;
+      }
+      #heart {
+        top: 65px;
+        left: 155px;
+      }
+      #ring {
+        top: 120px;
+        left: 755px;
+      }
+      #star2 {
+        top: 330px;
+        left: 455px;
+      }
+      #sun {
+        top: 75px;
+        right: 200px;
+      }
+      #twinkle {
+        top: 225px;
+        right: 570px;
+      }
+      #star {
+        top: 440px;
+        right: 105px;
+      }
+      #dust {
+        top: 720px;
+        right: 150px;
+      }
+      #flower {
+        top: 610px;
+        right: 855px;
+      }
+      #tulip {
+        top: 670px;
+        left: 110px;
+      }
+    }
+    .scroll {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 830px;
+      letter-spacing: -1px;
+      font-weight: 600;
+      .la-angle-down {
+        text-align: center;
+        display: block;
+      }
+    }
+  }
+}
