@@ -1,260 +1,96 @@
 import * as THREE from "three";
-import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
+import { MTLLoader } from "three/examples/jsm/loaders/MTLLoader.js";
+import { OBJLoader } from "three/examples/jsm/loaders/OBJLoader.js";
 import gsap from "gsap";
-import * as dat from "lil-gui";
 
-const scene = new THREE.Scene();
+let camera, scene, renderer;
 
-const renderer = new THREE.WebGLRenderer({ antialias: true });
-renderer.setSize(window.innerWidth, window.innerHeight);
-document.body.appendChild(renderer.domElement);
-renderer.outputEncoding = THREE.sRGBEncoding;
-renderer.setPixelRatio(window.devicePixelRatio);
+init();
+animate();
 
-const camera = new THREE.PerspectiveCamera(
-  45,
-  window.innerWidth / window.innerHeight,
-  1,
-  10000
-);
-camera.position.set(0, 0, 150);
+function init() {
+  camera = new THREE.PerspectiveCamera(
+    8,
+    window.innerWidth / window.innerHeight,
+    0.1,
+    10
+  );
+  camera.position.z = 2;
 
-const ambientLight = new THREE.AmbientLight(0xffffff, 8);
-ambientLight.position.set(0, 0, 100);
-scene.add(ambientLight);
+  // scene
+  scene = new THREE.Scene();
+  scene.background = new THREE.Color(0xeae8e0);
 
-const directionalLight = new THREE.DirectionalLight(0xffffff, 10);
-directionalLight.position.set(50, 50, 50);
-scene.add(directionalLight);
+  const ambientLight = new THREE.AmbientLight(0xffffff);
+  scene.add(ambientLight);
 
-const textureLoader = new THREE.TextureLoader();
-const texture = textureLoader.load("/images/bgtexture.jpg");
-scene.background = texture;
-// scene.background = new THREE.Color(0x44b8e0);
+  const pointLight = new THREE.PointLight(0xffffff, 60);
+  camera.add(pointLight);
+  scene.add(camera);
 
-const loader = new GLTFLoader();
+  // models
+  const modelsToLoad = [
+    {
+      mtl: "portfolio.mtl",
+      obj: "portfolio.obj",
+      position: new THREE.Vector3(0, -1.1, -6),
+    },
+  ];
 
-loader.load("/images/blender/title.glb", function (gltf) {
-  const titleModel = gltf.scene;
-  titleModel.rotation.set(5.9, 0.2, 0.2);
-  titleModel.scale.set(1.2, 1.2, 1.2);
-  titleModel.position.set(10, 2, -50);
-  scene.add(titleModel);
+  const loader = new THREE.ObjectLoader();
 
-  titleModel.traverse((child) => {
-    if (child.isMesh) {
-      const material = new THREE.MeshStandardMaterial({
-        color: 0x222222,
-        metalness: 1,
-        roughness: 0,
-      });
-      child.material = material;
-    }
+  modelsToLoad.forEach((modelInfo) => {
+    const { mtl, obj, position } = modelInfo;
+
+    const onProgress = function (xhr) {
+      if (xhr.lengthComputable) {
+        const percentComplete = (xhr.loaded / xhr.total) * 100;
+        console.log(percentComplete.toFixed(2) + "% downloaded");
+      }
+    };
+
+    new MTLLoader().setPath("images/3d/").load(mtl, function (materials) {
+      materials.preload();
+
+      new OBJLoader()
+        .setMaterials(materials)
+        .setPath("images/3d/")
+        .load(
+          obj,
+          function (object) {
+            object.position.copy(position);
+            object.scale.setScalar(0.01);
+            scene.add(object);
+
+            gsap.to(object.position, {
+              y: object.position.y + 0.05,
+              duration: 1,
+              yoyo: true,
+              repeat: -1,
+              ease: "power1.inOut",
+            });
+          },
+          onProgress
+        );
+    });
   });
 
-  // gsap.from(titleModel.position, {
-  //   y: window.innerHeight,
-  //   duration: 2,
-  //   ease: "power2.inOut",
-  //   onComplete: () => {
-  //     animateFloat();
-  //   },
-  // });
+  renderer = new THREE.WebGLRenderer({ antialias: true });
+  renderer.setPixelRatio(window.devicePixelRatio);
+  renderer.setSize(window.innerWidth, window.innerHeight);
+  document.body.appendChild(renderer.domElement);
 
-  function animateFloat() {
-    gsap.to(titleModel.position, {
-      y: "+=5",
-      duration: 1,
-      yoyo: true,
-      repeat: -1,
-      ease: "power1.inOut",
-    });
-  }
+  window.addEventListener("resize", onWindowResize);
+}
 
-  function animate() {
-    requestAnimationFrame(animate);
-    renderer.render(scene, camera);
-  }
-  animate();
-});
+function onWindowResize() {
+  camera.aspect = window.innerWidth / window.innerHeight;
+  camera.updateProjectionMatrix();
 
-loader.load("/images/blender/heart.glb", function (gltf) {
-  const heartModel = gltf.scene;
+  renderer.setSize(window.innerWidth, window.innerHeight);
+}
 
-  heartModel.rotation.set(Math.PI / -6.3, 3.2, 6.5);
-  heartModel.scale.set(2.4, 2.4, 2.4);
-  heartModel.position.set(-50, 38, 0);
-  scene.add(heartModel);
-
-  heartModel.traverse((child) => {
-    if (child.isMesh) {
-      const material = new THREE.MeshStandardMaterial({
-        color: 0xffffff,
-        metalness: 0.7,
-        roughness: 0.5,
-      });
-      child.material = material;
-    }
-  });
-
-  // gsap.from(heartModel.position, {
-  //   y: window.innerHeight,
-  //   duration: 2.1,
-  //   ease: "power2.inOut",
-  //   onComplete: () => {
-  //     animateFloat();
-  //   },
-  // });
-
-  function animateFloat() {
-    gsap.to(heartModel.position, {
-      y: "+=5",
-      duration: 1,
-      yoyo: true,
-      repeat: -1,
-      ease: "power1.inOut",
-    });
-  }
-
-  function animate() {
-    requestAnimationFrame(animate);
-    renderer.render(scene, camera);
-  }
-  animate();
-});
-
-loader.load("/images/blender/clover.glb", function (gltf) {
-  const cloverModel = gltf.scene;
-
-  cloverModel.rotation.set(Math.PI / -8, -5.5, 0.5); // 모델의 회전 조정
-  cloverModel.scale.set(0.7, 0.7, 0.7);
-  cloverModel.position.set(-75, -50, 0); // 모델의 위치 조정
-  scene.add(cloverModel);
-
-  cloverModel.traverse((child) => {
-    if (child.isMesh) {
-      const material = new THREE.MeshStandardMaterial({
-        color: 0xffffff,
-        metalness: 0.7,
-        roughness: 0.5,
-      });
-      child.material = material;
-    }
-  });
-
-  // gsap.from(cloverModel.position, {
-  //   y: window.innerHeight,
-  //   duration: 2.5,
-  //   ease: "power2.inOut",
-  //   onComplete: () => {
-  //     animateFloat();
-  //   },
-  // });
-
-  function animateFloat() {
-    gsap.to(cloverModel.position, {
-      y: "+=5",
-      duration: 1,
-      yoyo: true,
-      repeat: -1,
-      ease: "power1.inOut",
-    });
-  }
-
-  function animate() {
-    requestAnimationFrame(animate);
-    renderer.render(scene, camera);
-  }
-  animate();
-});
-
-loader.load("/images/blender/star.glb", function (gltf) {
-  const starModel = gltf.scene;
-
-  starModel.rotation.set(Math.PI / 9, 3, 3); // 모델의 회전 조정
-  starModel.scale.set(0.7, 0.7, 0.7);
-  starModel.position.set(100, 25, -50); // 모델의 위치 조정
-  scene.add(starModel);
-
-  starModel.traverse((child) => {
-    if (child.isMesh) {
-      const material = new THREE.MeshStandardMaterial({
-        color: 0xffffff,
-        metalness: 0.7,
-        roughness: 0.5,
-      });
-      child.material = material;
-    }
-  });
-
-  // gsap.from(starModel.position, {
-  //   y: window.innerHeight,
-  //   duration: 2.5,
-  //   ease: "power2.inOut",
-  //   onComplete: () => {
-  //     animateFloat();
-  //   },
-  // });
-
-  function animateFloat() {
-    gsap.to(starModel.position, {
-      y: "+=5",
-      duration: 1,
-      yoyo: true,
-      repeat: -1,
-      ease: "power1.inOut",
-    });
-  }
-
-  function animate() {
-    requestAnimationFrame(animate);
-    renderer.render(scene, camera);
-  }
-  animate();
-});
-
-loader.load("/images/blender/cat.glb", function (gltf) {
-  const starModel = gltf.scene;
-
-  starModel.rotation.set(0.07, -1.2, 0); // 모델의 회전 조정
-  starModel.scale.set(1.7, 1.7, 1.7);
-  starModel.position.set(60, -20, 10); // 모델의 위치 조정
-  scene.add(starModel);
-
-  starModel.traverse((child) => {
-    if (child.isMesh) {
-      const material = new THREE.MeshStandardMaterial({
-        color: 0xffffff,
-        metalness: 0.7,
-        roughness: 0.5,
-      });
-      child.material = material;
-      s;
-    }
-  });
-
-  // gsap.from(starModel.position, {
-  //   y: window.innerHeight,
-  //   duration: 2.5,
-  //   ease: "power2.inOut",
-  //   onComplete: () => {
-  //     animateFloat();
-  //   },
-  // });
-
-  function animateFloat() {
-    gsap.to(starModel.position, {
-      y: "+=5",
-      duration: 1,
-      yoyo: true,
-      repeat: -1,
-      ease: "power1.inOut",
-    });
-  }
-
-  function animate() {
-    requestAnimationFrame(animate);
-    renderer.render(scene, camera);
-  }
-  animate();
-});
+function animate() {
+  requestAnimationFrame(animate);
+  renderer.render(scene, camera);
+}
