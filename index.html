@@ -43,13 +43,15 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script defer src="assets/js/main.js"></script>
   </head>
   <body>
-    <div class="wrap">
-      <section id="main">
+    <div id="mouse_pointer"></div>
+    <div class="wrap" id="fullPage">
+      <section class="section" id="main">
         <h1>KIMDUST</h1>
         <div id="main3d">
           <img src="./images/text.png" alt="" />
@@ -60,7 +62,6 @@
           <img src="./images/icon/star2.png" class="main_icon" id="star2" />
           <img src="./images/icon/sun.png" class="main_icon" id="sun" />
           <img src="./images/icon/twinkle.png" class="main_icon" id="twinkle" />
-          <img src="./images/icon/star.png" class="main_icon" id="star" />
           <img src="./images/icon/dust.png" class="main_icon" id="dust" />
           <img src="./images/icon/flower.png" class="main_icon" id="flower" />
           <img src="./images/icon/tulip.png" class="main_icon" id="tulip" />
@@ -72,11 +73,14 @@
           <i class="las la-angle-down"></i>
         </div>
       </section>
-      <section id="about">
+      <section class="section" id="about">
         <h2>About Me</h2>
         <div class="profile">
           <img src="./images/profile.png" alt="" />
           <div class="box"></div>
+        </div>
+        <div id="about3d">
+          <img src="./images/cat.png" alt="" />
         </div>
         <div class="info">
           <div class="info_name">
@@ -142,6 +146,26 @@
           />
         </div>
       </section>
+      <section class="section" id="pp1">
+        <h2>PORTFOLIO</h2>
+      </section>
+    </div>
+
+    <div id="fp-nav">
+      <ul>
+        <li class="active">
+          <a href="#main"><div class="nav"></div></a>
+        </li>
+        <li>
+          <a href="#about"><div class="nav"></div></a>
+        </li>
+        <li>
+          <a href="#pp1"><div class="nav"></div></a>
+        </li>
+        <li>
+          <a href="#t2"><div class="nav"></div></a>
+        </li>
+      </ul>
     </div>
   </body>
 </html>
