@@ -1,7 +1,6 @@
-import * as THREE from "three";
-import { MTLLoader } from "three/examples/jsm/loaders/MTLLoader.js";
-import { OBJLoader } from "three/examples/jsm/loaders/OBJLoader.js";
-import gsap from "gsap";
+import * as THREE from "./three.module.js";
+import { MTLLoader } from "./MTLLoader.js";
+import { OBJLoader } from "./OBJLoader.js";
 
 let camera, scene, renderer;
 
@@ -49,12 +48,12 @@ function init() {
       }
     };
 
-    new MTLLoader().setPath("images/3d/").load(mtl, function (materials) {
+    new MTLLoader().setPath("../../images/3d/").load(mtl, function (materials) {
       materials.preload();
 
       new OBJLoader()
         .setMaterials(materials)
-        .setPath("images/3d/")
+        .setPath("../../images/3d/")
         .load(
           obj,
           function (object) {
