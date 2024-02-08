@@ -23,7 +23,7 @@ function init() {
   const ambientLight = new THREE.AmbientLight(0xffffff);
   scene.add(ambientLight);
 
-  const pointLight = new THREE.PointLight(0xffffff, 60);
+  const pointLight = new THREE.PointLight(0xffffff, 70);
   camera.add(pointLight);
   scene.add(camera);
 
@@ -32,7 +32,7 @@ function init() {
     {
       mtl: "portfolio.mtl",
       obj: "portfolio.obj",
-      position: new THREE.Vector3(0, -0.08, 0),
+      position: new THREE.Vector3(0, -0.04, 0),
     },
   ];
 
@@ -62,7 +62,7 @@ function init() {
             scene.add(object);
 
             gsap.to(object.position, {
-              y: object.position.y + 0.05,
+              y: object.position.y + 0.03,
               duration: 1,
               yoyo: true,
               repeat: -1,
