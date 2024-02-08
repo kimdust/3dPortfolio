@@ -261,6 +261,7 @@ legend {
 body {
   margin: 0;
   background-color: #eae8e0;
+  text-align: center;
 }
 body #main {
   position: relative;
@@ -276,7 +277,16 @@ body #main h1 {
   border: 3px solid black;
   padding: 0 100px;
   border-radius: 100px;
-  z-index: 1;
+}
+body #main #main3d {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 320px;
+}
+body #main #main3d img {
+  z-index: 100;
+  width: 1400px;
 }
 body #main .icon .main_icon {
   position: absolute;
@@ -290,7 +300,7 @@ body #main .icon #ring {
   left: 755px;
 }
 body #main .icon #star2 {
-  top: 330px;
+  top: 300px;
   left: 455px;
 }
 body #main .icon #sun {
@@ -310,20 +320,15 @@ body #main .icon #dust {
   right: 150px;
 }
 body #main .icon #flower {
-  top: 610px;
-  right: 855px;
+  top: 650px;
+  right: 825px;
 }
 body #main .icon #tulip {
   top: 670px;
   left: 110px;
 }
 body #main .scroll {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 830px;
-  letter-spacing: -1px;
-  font-weight: 600;
+  padding-top: 820px;
 }
 body #main .scroll .la-angle-down {
   text-align: center;

@@ -8,12 +8,12 @@
     <meta property="og:type" content="website" />
     <meta property="og:title" content="KIMDUST" />
     <meta property="og:description" content="KIMDUST Portfolio" />
-    <meta property="og:image" content="/" />
+    <meta property="og:image" content="./images/thumbnail.png" />
     <meta property="og:url" content="kimdust.me" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="KIMDUST" />
     <meta name="twitter:description" content="KIMDUST Portfolio" />
-    <meta name="twitter:image" content="/" />
+    <meta name="twitter:image" content="./images/thumbnail.png" />
     <meta name="twitter:domain" content="KIMDUST" />
 
     <link
@@ -41,25 +41,19 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-    <script type="importmap">
-      {
-        "imports": {
-          "three": "/assets/js/three.module.js"
-        }
-      }
-    </script>
-    <script type="module" src="./assets/js/three.module.js"></script>
-
-    <script src="./assets/js/comm.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script defer src="assets/js/main.js"></script>
   </head>
   <body>
     <div class="wrap">
       <section id="main">
         <h1>KIMDUST</h1>
+        <div id="main3d">
+          <img src="./images/text.png" alt="" />
+        </div>
         <div class="icon">
           <img src="./images/icon/heart.png" class="main_icon" id="heart" />
           <img src="./images/icon/ring.png" class="main_icon" id="ring" />
@@ -79,7 +73,5 @@
         </div>
       </section>
     </div>
-
-    <script type="module" src="/assets/js/main.js"></script>
   </body>
 </html>
