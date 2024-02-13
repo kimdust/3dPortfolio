@@ -235,12 +235,17 @@ body {
     .pp_inner {
       display: flex;
       margin-top: 80px;
-      .ppimg {
-        img {
-          width: 870px;
-          height: auto;
-          border: 3px solid $default;
-        }
+      .ppcover {
+        width: 870px;
+        height: auto;
+        border: 3px solid $default;
+      }
+      .pp3d {
+        position: absolute;
+        width: 250px;
+        z-index: 5;
+        bottom: 90px;
+        left: 780px;
       }
       .pptxt {
         text-align: left;
@@ -304,12 +309,17 @@ body {
     .pp_inner {
       display: flex;
       margin-top: 80px;
-      .ppimg {
-        img {
-          width: 870px;
-          height: auto;
-          border: 3px solid $default;
-        }
+      .ppcover {
+        width: 870px;
+        height: auto;
+        border: 3px solid $default;
+      }
+      .pp3d {
+        position: absolute;
+        width: 250px;
+        z-index: 5;
+        bottom: 90px;
+        left: 780px;
       }
       .pptxt {
         text-align: left;

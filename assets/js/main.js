@@ -1,3 +1,9 @@
+$(document).ready(function () {
+  $("#fullPage").fullpage({
+    autoScrolling: true,
+  });
+});
+
 gsap.to("#main3d", {
   y: 20,
   duration: 1,
@@ -6,7 +12,7 @@ gsap.to("#main3d", {
   ease: "power1.inOut",
 });
 
-gsap.to("#about3d", {
+gsap.to("#about3d, .pp3d", {
   y: 20,
   duration: 1,
   repeat: -1,
@@ -31,9 +37,3 @@ $clickElements.mouseleave(function () {
 });
 
 $(window).on("mousemove", moverCursor);
-
-$(document).ready(function () {
-  $("#fullPage").fullpage({
-    autoScrolling: true,
-  });
-});

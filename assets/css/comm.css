@@ -491,10 +491,17 @@ body #pp1 .pp_inner {
   display: flex;
   margin-top: 80px;
 }
-body #pp1 .pp_inner .ppimg img {
+body #pp1 .pp_inner .ppcover {
   width: 870px;
   height: auto;
   border: 3px solid #222;
+}
+body #pp1 .pp_inner .pp3d {
+  position: absolute;
+  width: 250px;
+  z-index: 5;
+  bottom: 90px;
+  left: 780px;
 }
 body #pp1 .pp_inner .pptxt {
   text-align: left;
@@ -558,10 +565,17 @@ body #pp2 .pp_inner {
   display: flex;
   margin-top: 80px;
 }
-body #pp2 .pp_inner .ppimg img {
+body #pp2 .pp_inner .ppcover {
   width: 870px;
   height: auto;
   border: 3px solid #222;
+}
+body #pp2 .pp_inner .pp3d {
+  position: absolute;
+  width: 250px;
+  z-index: 5;
+  bottom: 90px;
+  left: 780px;
 }
 body #pp2 .pp_inner .pptxt {
   text-align: left;
