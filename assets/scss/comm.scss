@@ -1,12 +1,5 @@
 @import "variables", "mixins", "reset";
 
-// 스크롤 숨김
-body {
-  -ms-overflow-style: none;
-}
-::-webkit-scrollbar {
-  display: none;
-}
 // 마우스포인터 변경
 #mouse_pointer {
   position: absolute;
@@ -47,380 +40,474 @@ body {
   background-color: #eae8e0;
   text-align: center;
   cursor: none !important;
-  #main {
-    position: relative;
-    height: 100vh;
-    h1 {
+  -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+#main {
+  position: relative;
+  height: 100vh;
+  h1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 120px;
+    font-weight: 600;
+    letter-spacing: -5px;
+    margin-top: 250px;
+    border: 3px solid $default;
+    padding: 0 100px;
+    border-radius: 100px;
+  }
+  #main3d {
+    img {
       position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      font-size: 120px;
-      font-weight: 600;
-      letter-spacing: -5px;
-      margin-top: 250px;
+      z-index: 100;
+    }
+    #P {
+      top: 370px;
+      left: 350px;
+      width: 145px;
+    }
+    #O {
+      top: 425px;
+      left: 474px;
+      width: 168px;
+    }
+    #R {
+      top: 387px;
+      left: 640px;
+      width: 160px;
+    }
+    #T {
+      top: 410px;
+      left: 783px;
+      width: 145px;
+    }
+    #F {
+      top: 430px;
+      left: 924px;
+      width: 140px;
+    }
+    #O2 {
+      top: 385px;
+      left: 1053px;
+      width: 167px;
+    }
+    #L {
+      top: 410px;
+      left: 1228px;
+      width: 122px;
+    }
+    #I {
+      top: 380px;
+      left: 1338px;
+      width: 83px;
+    }
+    #O3 {
+      top: 408px;
+      left: 1422px;
+      width: 167px;
+    }
+  }
+  .icon {
+    .main_icon {
+      position: absolute;
+    }
+    #heart {
+      top: 65px;
+      left: 155px;
+    }
+    #ring {
+      top: 120px;
+      left: 755px;
+    }
+    #star2 {
+      top: 300px;
+      left: 455px;
+    }
+    #sun {
+      top: 75px;
+      right: 200px;
+    }
+    #twinkle {
+      top: 225px;
+      right: 570px;
+    }
+    #star {
+      top: 440px;
+      right: 105px;
+    }
+    #dust {
+      top: 720px;
+      right: 150px;
+    }
+    #flower {
+      top: 650px;
+      right: 825px;
+    }
+    #tulip {
+      top: 670px;
+      left: 110px;
+    }
+  }
+  .scroll {
+    padding-top: 820px;
+    .la-angle-down {
+      text-align: center;
+      display: block;
+    }
+  }
+}
+#about {
+  position: relative;
+  height: 100vh;
+  padding: 60px 100px;
+  h2 {
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: -2px;
+    border: 3px solid $default;
+    border-radius: 100px;
+    width: 300px;
+    margin: 0 auto;
+  }
+  .profile {
+    img {
+      position: absolute;
+      width: 650px;
       border: 3px solid $default;
-      padding: 0 100px;
-      border-radius: 100px;
+      z-index: 5;
+      top: 210px;
+      left: 280px;
     }
-    #main3d {
+    .box {
       position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      top: 320px;
-      img {
-        z-index: 100;
-        width: 1400px;
+      display: inline-block;
+      width: 650px;
+      height: 640px;
+      border: 3px solid $default;
+      top: 180px;
+      left: 250px;
+    }
+  }
+  #about3d {
+    position: absolute;
+    z-index: 5;
+    bottom: 10px;
+    left: 120px;
+    img {
+      width: 300px;
+    }
+  }
+  .info {
+    text-align: left;
+    margin-left: 900px;
+    margin-top: 80px;
+    letter-spacing: -2px;
+    .info_name {
+      display: flex;
+      font-size: 60px;
+      h3 {
+        font-weight: 800;
+        margin-right: 15px;
+        color: $primary;
+      }
+      h4 {
+        font-weight: lighter;
       }
     }
-    .icon {
-      .main_icon {
-        position: absolute;
-      }
-      #heart {
-        top: 65px;
-        left: 155px;
-      }
-      #ring {
-        top: 120px;
-        left: 755px;
-      }
-      #star2 {
-        top: 300px;
-        left: 455px;
-      }
-      #sun {
-        top: 75px;
-        right: 200px;
-      }
-      #twinkle {
-        top: 225px;
-        right: 570px;
-      }
-      #star {
-        top: 440px;
-        right: 105px;
-      }
-      #dust {
-        top: 720px;
-        right: 150px;
-      }
-      #flower {
-        top: 650px;
-        right: 825px;
-      }
-      #tulip {
-        top: 670px;
-        left: 110px;
-      }
+    p {
+      font-size: 30px;
+      margin-bottom: 50px;
     }
-    .scroll {
-      padding-top: 820px;
-      .la-angle-down {
-        text-align: center;
-        display: block;
+    .info_tit {
+      font-size: 30px;
+      font-weight: 600;
+      .info_2depth {
+        font-size: 24px;
+        font-weight: normal;
+        margin-bottom: 40px;
+        img {
+          width: 55px;
+        }
       }
     }
   }
-  #about {
-    position: relative;
-    height: 100vh;
-    padding: 60px 100px;
-    h2 {
-      font-size: 40px;
-      font-weight: 600;
-      letter-spacing: -2px;
-      border: 3px solid $default;
-      border-radius: 100px;
-      width: 300px;
-      margin: 0 auto;
-    }
-    .profile {
-      img {
-        position: absolute;
-        width: 650px;
-        border: 3px solid $default;
-        z-index: 5;
-        top: 210px;
-        left: 280px;
-      }
-      .box {
-        position: absolute;
-        display: inline-block;
-        width: 650px;
-        height: 640px;
-        border: 3px solid $default;
-        top: 180px;
-        left: 250px;
-      }
-    }
-    #about3d {
+  .icon {
+    .about_icon {
       position: absolute;
       z-index: 5;
-      bottom: 10px;
-      left: 120px;
+    }
+    #heart {
+      top: 480px;
+      left: 330px;
+    }
+    #twinkle {
+      top: 300px;
+      left: 730px;
+    }
+    #star {
+      top: 250px;
+      right: 450px;
+    }
+    #plant {
+      bottom: 70px;
+      right: 150px;
+    }
+  }
+}
+#pp1 {
+  position: relative;
+  height: 100vh;
+  padding: 60px 100px;
+  margin-top: 20px;
+  h2 {
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: -2px;
+    border: 3px solid $default;
+    border-radius: 100px;
+    width: 300px;
+    margin: 0 auto;
+  }
+  .pp_inner {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 70px;
+    .ppcover {
+      width: 870px;
+      height: 552px;
+      border: 3px solid $default;
+      border-radius: 20px;
+      overflow: hidden;
       img {
-        width: 300px;
+        width: 100%;
+        transition: transform 0.8s ease;
+      }
+      &:hover img {
+        transform: translateY(-2070px);
       }
     }
-    .info {
+    .pp3d {
+      position: absolute;
+      width: 250px;
+      z-index: 5;
+      bottom: 90px;
+      left: 870px;
+    }
+    .pptxt {
       text-align: left;
-      margin-left: 900px;
-      margin-top: 80px;
+      margin-left: 80px;
       letter-spacing: -2px;
-      .info_name {
-        display: flex;
-        font-size: 60px;
-        h3 {
-          font-weight: 800;
-          margin-right: 15px;
-          color: $primary;
-        }
-        h4 {
-          font-weight: lighter;
-        }
+      img {
+        height: 40px;
       }
-      p {
-        font-size: 30px;
-        margin-bottom: 50px;
-      }
-      .info_tit {
+      h3 {
         font-size: 30px;
         font-weight: 600;
-        .info_2depth {
-          font-size: 24px;
-          font-weight: normal;
-          margin-bottom: 40px;
-          img {
-            width: 55px;
-          }
-        }
       }
-    }
-    .icon {
-      .about_icon {
-        position: absolute;
-        z-index: 5;
-      }
-      #heart {
-        top: 480px;
-        left: 330px;
-      }
-      #twinkle {
-        top: 300px;
-        left: 730px;
-      }
-      #star {
-        top: 250px;
-        right: 450px;
-      }
-      #plant {
-        bottom: 70px;
-        right: 150px;
-      }
-    }
-  }
-  #pp1 {
-    position: relative;
-    height: 100vh;
-    padding: 60px 100px;
-    h2 {
-      font-size: 40px;
-      font-weight: 600;
-      letter-spacing: -2px;
-      border: 3px solid $default;
-      border-radius: 100px;
-      width: 300px;
-      margin: 0 auto;
-    }
-    .pp_inner {
-      display: flex;
-      margin-top: 80px;
-      .ppcover {
-        width: 870px;
-        height: auto;
-        border: 3px solid $default;
-      }
-      .pp3d {
-        position: absolute;
-        width: 250px;
-        z-index: 5;
-        bottom: 90px;
-        left: 780px;
-      }
-      .pptxt {
-        text-align: left;
-        margin-left: 80px;
-        letter-spacing: -2px;
-        img {
-          width: 200px;
-        }
-        h3 {
-          font-size: 35px;
-          font-weight: 600;
-        }
-        ul {
-          padding: 30px 0;
-          li {
-            display: flex;
-            font-size: 25px;
-            padding: 5px 0;
-            strong {
-              margin-right: 20px;
-              font-weight: 500;
-            }
-            p {
-              font-weight: 300;
-            }
-          }
-        }
-        .pp1_desc {
+      ul {
+        padding: 30px 0 60px 0;
+        li {
+          display: flex;
           font-size: 22px;
-          font-weight: 300;
+          padding: 5px 0;
+          strong {
+            margin-right: 20px;
+            font-weight: 500;
+          }
+          p {
+            font-weight: 300;
+          }
         }
-        .pp1_btn {
-          margin-top: 30px;
-          button {
-            margin-right: 10px;
-            a {
-              color: $default;
-              font-size: 20px;
-              padding: 10px 15px;
-              border: 2px solid $default;
-              border-radius: 15px;
-            }
+      }
+      .pp_desc {
+        font-size: 20px;
+        font-weight: 300;
+      }
+      .pp_btn {
+        margin-top: 30px;
+        button {
+          margin-right: 10px;
+          a {
+            color: $default;
+            font-size: 20px;
+            padding: 10px 15px;
+            border: 1px solid $default;
+            border-radius: 15px;
           }
         }
       }
     }
   }
-  #pp2 {
-    position: relative;
-    height: 100vh;
-    padding: 60px 100px;
-    h2 {
-      font-size: 40px;
-      font-weight: 600;
-      letter-spacing: -2px;
+}
+#pp2 {
+  position: relative;
+  height: 100vh;
+  padding: 60px 100px;
+  margin-top: 20px;
+  h2 {
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: -2px;
+    border: 3px solid $default;
+    border-radius: 100px;
+    width: 300px;
+    margin: 0 auto;
+  }
+  .pp_inner {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 70px;
+    .ppcover {
+      width: 870px;
+      height: 552px;
       border: 3px solid $default;
-      border-radius: 100px;
-      width: 300px;
-      margin: 0 auto;
+      border-radius: 20px;
+      overflow: hidden;
+      img {
+        width: 100%;
+        transition: transform 0.8s ease;
+      }
+      &:hover img {
+        transform: translateY(-420px);
+      }
     }
-    .pp_inner {
-      display: flex;
-      margin-top: 80px;
-      .ppcover {
-        width: 870px;
-        height: auto;
-        border: 3px solid $default;
+    .pp3d {
+      position: absolute;
+      width: 250px;
+      z-index: 5;
+      bottom: 90px;
+      left: 870px;
+    }
+    .pptxt {
+      text-align: left;
+      margin-left: 80px;
+      letter-spacing: -2px;
+      img {
+        height: 40px;
       }
-      .pp3d {
-        position: absolute;
-        width: 250px;
-        z-index: 5;
-        bottom: 90px;
-        left: 780px;
+      h3 {
+        font-size: 30px;
+        font-weight: 600;
       }
-      .pptxt {
-        text-align: left;
-        margin-left: 80px;
-        letter-spacing: -2px;
-        img {
-          width: 156px;
-        }
-        h3 {
-          font-size: 35px;
-          font-weight: 600;
-        }
-        ul {
-          padding: 30px 0;
-          li {
-            display: flex;
-            font-size: 25px;
-            padding: 5px 0;
-            strong {
-              margin-right: 20px;
-              font-weight: 500;
-            }
-            p {
-              font-weight: 300;
-            }
+      ul {
+        padding: 30px 0 60px 0;
+        li {
+          display: flex;
+          font-size: 22px;
+          padding: 5px 0;
+          strong {
+            margin-right: 20px;
+            font-weight: 500;
+          }
+          p {
+            font-weight: 300;
           }
         }
-        .pp2_desc {
-          font-size: 22px;
-          font-weight: 300;
-        }
-        .pp2_btn {
-          margin-top: 30px;
-          button {
-            margin-right: 10px;
-            a {
-              color: $default;
-              font-size: 20px;
-              padding: 10px 15px;
-              border: 2px solid $default;
-              border-radius: 15px;
-            }
+      }
+      .pp_desc {
+        font-size: 20px;
+        font-weight: 300;
+      }
+      .pp_btn {
+        margin-top: 30px;
+        button {
+          margin-right: 10px;
+          a {
+            color: $default;
+            font-size: 20px;
+            padding: 10px 15px;
+            border: 1px solid $default;
+            border-radius: 15px;
           }
         }
       }
     }
   }
-  #pp3 {
-    position: relative;
-    height: 100vh;
-    padding: 60px 100px;
-    h2 {
-      font-size: 40px;
-      font-weight: 600;
-      letter-spacing: -2px;
+}
+#pp3 {
+  position: relative;
+  height: 100vh;
+  padding: 60px 100px;
+  margin-top: 20px;
+  h2 {
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: -2px;
+    border: 3px solid $default;
+    border-radius: 100px;
+    width: 300px;
+    margin: 0 auto;
+  }
+  .pp_inner {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 70px;
+    .ppcover {
+      width: 870px;
+      height: auto;
       border: 3px solid $default;
-      border-radius: 100px;
-      width: 300px;
-      margin: 0 auto;
+      border-radius: 20px;
     }
-    .pp_inner {
-      display: flex;
-      margin-top: 80px;
-      .ppimg {
-        img {
-          width: 870px;
-          height: auto;
-          border: 3px solid $default;
-        }
+    .pp3d {
+      position: absolute;
+      width: 250px;
+      z-index: 5;
+      bottom: 90px;
+      left: 860px;
+    }
+    .pptxt {
+      text-align: left;
+      margin-left: 80px;
+      letter-spacing: -2px;
+      img {
+        width: 200px;
       }
-      .pptxt {
-        text-align: left;
-        margin-left: 80px;
-        letter-spacing: -2px;
-        img {
-          width: 200px;
-        }
-        h3 {
-          font-size: 35px;
-          font-weight: 600;
-        }
-        ul {
-          padding: 30px 0;
-          li {
-            display: flex;
-            font-size: 25px;
-            padding: 5px 0;
-            strong {
-              margin-right: 20px;
-              font-weight: 500;
-            }
-            p {
-              font-weight: 300;
-            }
+      h3 {
+        font-size: 30px;
+        font-weight: 600;
+      }
+      ul {
+        padding: 30px 0 60px 0;
+        li {
+          display: flex;
+          font-size: 22px;
+          padding: 5px 0;
+          strong {
+            margin-right: 20px;
+            font-weight: 500;
+          }
+          p {
+            font-weight: 300;
           }
         }
-        .pp3_desc {
-          font-size: 22px;
-          font-weight: 300;
-        }
+      }
+      .pp_desc {
+        font-size: 20px;
+        font-weight: 300;
       }
     }
+  }
+}
+#contect {
+  position: relative;
+  height: 100vh;
+  padding: 60px 100px;
+  margin-top: 20px;
+  h2 {
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: -2px;
+    border: 3px solid $default;
+    border-radius: 100px;
+    width: 300px;
+    margin: 0 auto;
   }
 }

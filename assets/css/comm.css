@@ -259,14 +259,6 @@ legend {
   content: "";
 }
 
-body {
-  -ms-overflow-style: none;
-}
-
-::-webkit-scrollbar {
-  display: none;
-}
-
 #mouse_pointer {
   position: absolute;
   width: 30px;
@@ -306,12 +298,18 @@ body {
   background-color: #eae8e0;
   text-align: center;
   cursor: none !important;
+  -ms-overflow-style: none;
 }
-body #main {
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+#main {
   position: relative;
   height: 100vh;
 }
-body #main h1 {
+#main h1 {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -323,68 +321,108 @@ body #main h1 {
   padding: 0 100px;
   border-radius: 100px;
 }
-body #main #main3d {
+#main #main3d img {
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 320px;
-}
-body #main #main3d img {
   z-index: 100;
-  width: 1400px;
 }
-body #main .icon .main_icon {
+#main #main3d #P {
+  top: 370px;
+  left: 350px;
+  width: 145px;
+}
+#main #main3d #O {
+  top: 425px;
+  left: 474px;
+  width: 168px;
+}
+#main #main3d #R {
+  top: 387px;
+  left: 640px;
+  width: 160px;
+}
+#main #main3d #T {
+  top: 410px;
+  left: 783px;
+  width: 145px;
+}
+#main #main3d #F {
+  top: 430px;
+  left: 924px;
+  width: 140px;
+}
+#main #main3d #O2 {
+  top: 385px;
+  left: 1053px;
+  width: 167px;
+}
+#main #main3d #L {
+  top: 410px;
+  left: 1228px;
+  width: 122px;
+}
+#main #main3d #I {
+  top: 380px;
+  left: 1338px;
+  width: 83px;
+}
+#main #main3d #O3 {
+  top: 408px;
+  left: 1422px;
+  width: 167px;
+}
+#main .icon .main_icon {
   position: absolute;
 }
-body #main .icon #heart {
+#main .icon #heart {
   top: 65px;
   left: 155px;
 }
-body #main .icon #ring {
+#main .icon #ring {
   top: 120px;
   left: 755px;
 }
-body #main .icon #star2 {
+#main .icon #star2 {
   top: 300px;
   left: 455px;
 }
-body #main .icon #sun {
+#main .icon #sun {
   top: 75px;
   right: 200px;
 }
-body #main .icon #twinkle {
+#main .icon #twinkle {
   top: 225px;
   right: 570px;
 }
-body #main .icon #star {
+#main .icon #star {
   top: 440px;
   right: 105px;
 }
-body #main .icon #dust {
+#main .icon #dust {
   top: 720px;
   right: 150px;
 }
-body #main .icon #flower {
+#main .icon #flower {
   top: 650px;
   right: 825px;
 }
-body #main .icon #tulip {
+#main .icon #tulip {
   top: 670px;
   left: 110px;
 }
-body #main .scroll {
+#main .scroll {
   padding-top: 820px;
 }
-body #main .scroll .la-angle-down {
+#main .scroll .la-angle-down {
   text-align: center;
   display: block;
 }
-body #about {
+
+#about {
   position: relative;
   height: 100vh;
   padding: 60px 100px;
 }
-body #about h2 {
+#about h2 {
   font-size: 40px;
   font-weight: 600;
   letter-spacing: -2px;
@@ -393,7 +431,7 @@ body #about h2 {
   width: 300px;
   margin: 0 auto;
 }
-body #about .profile img {
+#about .profile img {
   position: absolute;
   width: 650px;
   border: 3px solid #222;
@@ -401,7 +439,7 @@ body #about .profile img {
   top: 210px;
   left: 280px;
 }
-body #about .profile .box {
+#about .profile .box {
   position: absolute;
   display: inline-block;
   width: 650px;
@@ -410,75 +448,77 @@ body #about .profile .box {
   top: 180px;
   left: 250px;
 }
-body #about #about3d {
+#about #about3d {
   position: absolute;
   z-index: 5;
   bottom: 10px;
   left: 120px;
 }
-body #about #about3d img {
+#about #about3d img {
   width: 300px;
 }
-body #about .info {
+#about .info {
   text-align: left;
   margin-left: 900px;
   margin-top: 80px;
   letter-spacing: -2px;
 }
-body #about .info .info_name {
+#about .info .info_name {
   display: flex;
   font-size: 60px;
 }
-body #about .info .info_name h3 {
+#about .info .info_name h3 {
   font-weight: 800;
   margin-right: 15px;
-  color: #58cc5a;
+  color: #3cb63e;
 }
-body #about .info .info_name h4 {
+#about .info .info_name h4 {
   font-weight: lighter;
 }
-body #about .info p {
+#about .info p {
   font-size: 30px;
   margin-bottom: 50px;
 }
-body #about .info .info_tit {
+#about .info .info_tit {
   font-size: 30px;
   font-weight: 600;
 }
-body #about .info .info_tit .info_2depth {
+#about .info .info_tit .info_2depth {
   font-size: 24px;
   font-weight: normal;
   margin-bottom: 40px;
 }
-body #about .info .info_tit .info_2depth img {
+#about .info .info_tit .info_2depth img {
   width: 55px;
 }
-body #about .icon .about_icon {
+#about .icon .about_icon {
   position: absolute;
   z-index: 5;
 }
-body #about .icon #heart {
+#about .icon #heart {
   top: 480px;
   left: 330px;
 }
-body #about .icon #twinkle {
+#about .icon #twinkle {
   top: 300px;
   left: 730px;
 }
-body #about .icon #star {
+#about .icon #star {
   top: 250px;
   right: 450px;
 }
-body #about .icon #plant {
+#about .icon #plant {
   bottom: 70px;
   right: 150px;
 }
-body #pp1 {
+
+#pp1 {
   position: relative;
   height: 100vh;
   padding: 60px 100px;
+  margin-top: 20px;
 }
-body #pp1 h2 {
+#pp1 h2 {
   font-size: 40px;
   font-weight: 600;
   letter-spacing: -2px;
@@ -487,72 +527,85 @@ body #pp1 h2 {
   width: 300px;
   margin: 0 auto;
 }
-body #pp1 .pp_inner {
+#pp1 .pp_inner {
   display: flex;
-  margin-top: 80px;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 70px;
 }
-body #pp1 .pp_inner .ppcover {
+#pp1 .pp_inner .ppcover {
   width: 870px;
-  height: auto;
+  height: 552px;
   border: 3px solid #222;
+  border-radius: 20px;
+  overflow: hidden;
 }
-body #pp1 .pp_inner .pp3d {
+#pp1 .pp_inner .ppcover img {
+  width: 100%;
+  transition: transform 0.8s ease;
+}
+#pp1 .pp_inner .ppcover:hover img {
+  transform: translateY(-2070px);
+}
+#pp1 .pp_inner .pp3d {
   position: absolute;
   width: 250px;
   z-index: 5;
   bottom: 90px;
-  left: 780px;
+  left: 870px;
 }
-body #pp1 .pp_inner .pptxt {
+#pp1 .pp_inner .pptxt {
   text-align: left;
   margin-left: 80px;
   letter-spacing: -2px;
 }
-body #pp1 .pp_inner .pptxt img {
-  width: 200px;
+#pp1 .pp_inner .pptxt img {
+  height: 40px;
 }
-body #pp1 .pp_inner .pptxt h3 {
-  font-size: 35px;
+#pp1 .pp_inner .pptxt h3 {
+  font-size: 30px;
   font-weight: 600;
 }
-body #pp1 .pp_inner .pptxt ul {
-  padding: 30px 0;
+#pp1 .pp_inner .pptxt ul {
+  padding: 30px 0 60px 0;
 }
-body #pp1 .pp_inner .pptxt ul li {
+#pp1 .pp_inner .pptxt ul li {
   display: flex;
-  font-size: 25px;
+  font-size: 22px;
   padding: 5px 0;
 }
-body #pp1 .pp_inner .pptxt ul li strong {
+#pp1 .pp_inner .pptxt ul li strong {
   margin-right: 20px;
   font-weight: 500;
 }
-body #pp1 .pp_inner .pptxt ul li p {
+#pp1 .pp_inner .pptxt ul li p {
   font-weight: 300;
 }
-body #pp1 .pp_inner .pptxt .pp1_desc {
-  font-size: 22px;
+#pp1 .pp_inner .pptxt .pp_desc {
+  font-size: 20px;
   font-weight: 300;
 }
-body #pp1 .pp_inner .pptxt .pp1_btn {
+#pp1 .pp_inner .pptxt .pp_btn {
   margin-top: 30px;
 }
-body #pp1 .pp_inner .pptxt .pp1_btn button {
+#pp1 .pp_inner .pptxt .pp_btn button {
   margin-right: 10px;
 }
-body #pp1 .pp_inner .pptxt .pp1_btn button a {
+#pp1 .pp_inner .pptxt .pp_btn button a {
   color: #222;
   font-size: 20px;
   padding: 10px 15px;
-  border: 2px solid #222;
+  border: 1px solid #222;
   border-radius: 15px;
 }
-body #pp2 {
+
+#pp2 {
   position: relative;
   height: 100vh;
   padding: 60px 100px;
+  margin-top: 20px;
 }
-body #pp2 h2 {
+#pp2 h2 {
   font-size: 40px;
   font-weight: 600;
   letter-spacing: -2px;
@@ -561,72 +614,85 @@ body #pp2 h2 {
   width: 300px;
   margin: 0 auto;
 }
-body #pp2 .pp_inner {
+#pp2 .pp_inner {
   display: flex;
-  margin-top: 80px;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 70px;
 }
-body #pp2 .pp_inner .ppcover {
+#pp2 .pp_inner .ppcover {
   width: 870px;
-  height: auto;
+  height: 552px;
   border: 3px solid #222;
+  border-radius: 20px;
+  overflow: hidden;
 }
-body #pp2 .pp_inner .pp3d {
+#pp2 .pp_inner .ppcover img {
+  width: 100%;
+  transition: transform 0.8s ease;
+}
+#pp2 .pp_inner .ppcover:hover img {
+  transform: translateY(-420px);
+}
+#pp2 .pp_inner .pp3d {
   position: absolute;
   width: 250px;
   z-index: 5;
   bottom: 90px;
-  left: 780px;
+  left: 870px;
 }
-body #pp2 .pp_inner .pptxt {
+#pp2 .pp_inner .pptxt {
   text-align: left;
   margin-left: 80px;
   letter-spacing: -2px;
 }
-body #pp2 .pp_inner .pptxt img {
-  width: 156px;
+#pp2 .pp_inner .pptxt img {
+  height: 40px;
 }
-body #pp2 .pp_inner .pptxt h3 {
-  font-size: 35px;
+#pp2 .pp_inner .pptxt h3 {
+  font-size: 30px;
   font-weight: 600;
 }
-body #pp2 .pp_inner .pptxt ul {
-  padding: 30px 0;
+#pp2 .pp_inner .pptxt ul {
+  padding: 30px 0 60px 0;
 }
-body #pp2 .pp_inner .pptxt ul li {
+#pp2 .pp_inner .pptxt ul li {
   display: flex;
-  font-size: 25px;
+  font-size: 22px;
   padding: 5px 0;
 }
-body #pp2 .pp_inner .pptxt ul li strong {
+#pp2 .pp_inner .pptxt ul li strong {
   margin-right: 20px;
   font-weight: 500;
 }
-body #pp2 .pp_inner .pptxt ul li p {
+#pp2 .pp_inner .pptxt ul li p {
   font-weight: 300;
 }
-body #pp2 .pp_inner .pptxt .pp2_desc {
-  font-size: 22px;
+#pp2 .pp_inner .pptxt .pp_desc {
+  font-size: 20px;
   font-weight: 300;
 }
-body #pp2 .pp_inner .pptxt .pp2_btn {
+#pp2 .pp_inner .pptxt .pp_btn {
   margin-top: 30px;
 }
-body #pp2 .pp_inner .pptxt .pp2_btn button {
+#pp2 .pp_inner .pptxt .pp_btn button {
   margin-right: 10px;
 }
-body #pp2 .pp_inner .pptxt .pp2_btn button a {
+#pp2 .pp_inner .pptxt .pp_btn button a {
   color: #222;
   font-size: 20px;
   padding: 10px 15px;
-  border: 2px solid #222;
+  border: 1px solid #222;
   border-radius: 15px;
 }
-body #pp3 {
+
+#pp3 {
   position: relative;
   height: 100vh;
   padding: 60px 100px;
+  margin-top: 20px;
 }
-body #pp3 h2 {
+#pp3 h2 {
   font-size: 40px;
   font-weight: 600;
   letter-spacing: -2px;
@@ -635,43 +701,69 @@ body #pp3 h2 {
   width: 300px;
   margin: 0 auto;
 }
-body #pp3 .pp_inner {
+#pp3 .pp_inner {
   display: flex;
-  margin-top: 80px;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 70px;
 }
-body #pp3 .pp_inner .ppimg img {
+#pp3 .pp_inner .ppcover {
   width: 870px;
   height: auto;
   border: 3px solid #222;
+  border-radius: 20px;
 }
-body #pp3 .pp_inner .pptxt {
+#pp3 .pp_inner .pp3d {
+  position: absolute;
+  width: 250px;
+  z-index: 5;
+  bottom: 90px;
+  left: 860px;
+}
+#pp3 .pp_inner .pptxt {
   text-align: left;
   margin-left: 80px;
   letter-spacing: -2px;
 }
-body #pp3 .pp_inner .pptxt img {
+#pp3 .pp_inner .pptxt img {
   width: 200px;
 }
-body #pp3 .pp_inner .pptxt h3 {
-  font-size: 35px;
+#pp3 .pp_inner .pptxt h3 {
+  font-size: 30px;
   font-weight: 600;
 }
-body #pp3 .pp_inner .pptxt ul {
-  padding: 30px 0;
+#pp3 .pp_inner .pptxt ul {
+  padding: 30px 0 60px 0;
 }
-body #pp3 .pp_inner .pptxt ul li {
+#pp3 .pp_inner .pptxt ul li {
   display: flex;
-  font-size: 25px;
+  font-size: 22px;
   padding: 5px 0;
 }
-body #pp3 .pp_inner .pptxt ul li strong {
+#pp3 .pp_inner .pptxt ul li strong {
   margin-right: 20px;
   font-weight: 500;
 }
-body #pp3 .pp_inner .pptxt ul li p {
+#pp3 .pp_inner .pptxt ul li p {
   font-weight: 300;
 }
-body #pp3 .pp_inner .pptxt .pp3_desc {
-  font-size: 22px;
+#pp3 .pp_inner .pptxt .pp_desc {
+  font-size: 20px;
   font-weight: 300;
+}
+
+#contect {
+  position: relative;
+  height: 100vh;
+  padding: 60px 100px;
+  margin-top: 20px;
+}
+#contect h2 {
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: -2px;
+  border: 3px solid #222;
+  border-radius: 100px;
+  width: 300px;
+  margin: 0 auto;
 }
