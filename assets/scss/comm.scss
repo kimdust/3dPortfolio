@@ -510,4 +510,30 @@ body {
     width: 300px;
     margin: 0 auto;
   }
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    li {
+      display: flex;
+      flex-direction: column;
+      width: 400px;
+      padding: 250px 0;
+      border: 3px solid $default;
+      margin: 0 20px;
+      .la-github::before,
+      .la-phone::before,
+      .la-envelope::before {
+        font-size: 60px;
+      }
+      a {
+        font-size: 22px;
+        font-weight: 600;
+        color: $default;
+        margin-top: 10px;
+        opacity: 0;
+      }
+    }
+  }
 }

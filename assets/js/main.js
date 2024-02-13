@@ -34,6 +34,28 @@ gsap.to("#about3d, .pp3d", {
   ease: "power1.inOut",
 });
 
+var elements = document.querySelectorAll("#contect li");
+
+// 각 요소에 대해 이벤트 리스너 등록
+elements.forEach(function (element) {
+  var icon = element.querySelector("i");
+  var anchor = element.querySelector("a");
+
+  // 마우스가 요소 위로 이동했을 때 이벤트 리스너 추가
+  element.addEventListener("mouseenter", function () {
+    gsap.to(element, { duration: 0.3, backgroundColor: "black" });
+    gsap.to(icon, { duration: 0.3, color: "white" });
+    gsap.to(anchor, { duration: 0.3, opacity: 1, color: "white" });
+  });
+
+  // 마우스가 요소 바깥으로 이동했을 때 이벤트 리스너 추가
+  element.addEventListener("mouseleave", function () {
+    gsap.to(element, { duration: 0.3, backgroundColor: "transparent" });
+    gsap.to(icon, { duration: 0.3, color: "#222" });
+    gsap.to(anchor, { duration: 0.3, opacity: 0, color: "transparent" });
+  });
+});
+
 var $mousePointer = $("#mouse_pointer"),
   $clickElements = $("a, label");
 

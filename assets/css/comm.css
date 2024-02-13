@@ -767,3 +767,29 @@ body {
   width: 300px;
   margin: 0 auto;
 }
+#contect ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+}
+#contect ul li {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  padding: 250px 0;
+  border: 3px solid #222;
+  margin: 0 20px;
+}
+#contect ul li .la-github::before,
+#contect ul li .la-phone::before,
+#contect ul li .la-envelope::before {
+  font-size: 60px;
+}
+#contect ul li a {
+  font-size: 22px;
+  font-weight: 600;
+  color: #222;
+  margin-top: 10px;
+  opacity: 0;
+}
