@@ -53,13 +53,13 @@ body {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 120px;
+    font-size: calc(12px + 7vw);
     font-weight: 600;
-    letter-spacing: -5px;
-    margin-top: 250px;
+    letter-spacing: -0.5vw;
+    margin-top: calc(25px + 22vh);
     border: 3px solid $default;
-    padding: 0 100px;
-    border-radius: 100px;
+    padding: 0 calc(10px + 4vw);
+    border-radius: 300px;
   }
   #main3d {
     img {
@@ -67,49 +67,49 @@ body {
       z-index: 100;
     }
     #P {
-      top: 370px;
-      left: 350px;
-      width: 145px;
+      top: calc((370px / 950px) * 100vh);
+      left: calc((350px / 1920px) * 100%);
+      width: calc((145px / 1920px) * 100%);
     }
     #O {
-      top: 425px;
-      left: 474px;
-      width: 168px;
+      top: calc((425px / 950px) * 100vh);
+      left: calc((474px / 1920px) * 100%);
+      width: calc((168px / 1920px) * 100%);
     }
     #R {
-      top: 387px;
-      left: 640px;
-      width: 160px;
+      top: calc((387px / 950px) * 100vh);
+      left: calc((640px / 1920px) * 100%);
+      width: calc((160px / 1920px) * 100%);
     }
     #T {
-      top: 410px;
-      left: 783px;
-      width: 145px;
+      top: calc((410px / 950px) * 100vh);
+      left: calc((783px / 1920px) * 100%);
+      width: calc((145px / 1920px) * 100%);
     }
     #F {
-      top: 430px;
-      left: 924px;
-      width: 140px;
+      top: calc((430px / 950px) * 100vh);
+      left: calc((924px / 1920px) * 100%);
+      width: calc((140px / 1920px) * 100%);
     }
     #O2 {
-      top: 385px;
-      left: 1053px;
-      width: 167px;
+      top: calc((385px / 950px) * 100vh);
+      left: calc((1053px / 1920px) * 100%);
+      width: calc((167px / 1920px) * 100%);
     }
     #L {
-      top: 410px;
-      left: 1228px;
-      width: 122px;
+      top: calc((410px / 950px) * 100vh);
+      left: calc((1228px / 1920px) * 100%);
+      width: calc((122px / 1920px) * 100%);
     }
     #I {
-      top: 380px;
-      left: 1338px;
-      width: 83px;
+      top: calc((380px / 950px) * 100vh);
+      left: calc((1338px / 1920px) * 100%);
+      width: calc((83px / 1920px) * 100%);
     }
     #O3 {
-      top: 408px;
-      left: 1422px;
-      width: 167px;
+      top: calc((408px / 950px) * 100vh);
+      left: calc((1422px / 1920px) * 100%);
+      width: calc((167px / 1920px) * 100%);
     }
   }
   .icon {
@@ -117,40 +117,40 @@ body {
       position: absolute;
     }
     #heart {
-      top: 65px;
-      left: 155px;
+      top: calc((65px / 950px) * 100vh);
+      left: calc((155px / 1920px) * 100%);
     }
     #ring {
-      top: 120px;
-      left: 755px;
+      top: calc((120px / 950px) * 100vh);
+      left: calc((755px / 1920px) * 100%);
     }
     #star2 {
-      top: 300px;
-      left: 455px;
+      top: calc((300px / 950px) * 100vh);
+      left: calc((455px / 1920px) * 100%);
     }
     #sun {
-      top: 75px;
-      right: 200px;
+      top: calc((75px / 950px) * 100vh);
+      right: calc((200px / 1920px) * 100%);
     }
     #twinkle {
-      top: 225px;
-      right: 570px;
+      top: calc((205px / 950px) * 100vh);
+      right: calc((530px / 1920px) * 100%);
     }
     #star {
-      top: 440px;
-      right: 105px;
+      top: calc((440px / 950px) * 100vh);
+      right: calc((105px / 1920px) * 100%);
     }
     #dust {
-      top: 720px;
-      right: 150px;
+      top: calc((720px / 950px) * 100vh);
+      right: calc((150px / 1920px) * 100%);
     }
     #flower {
-      top: 650px;
-      right: 825px;
+      top: calc((650px / 950px) * 100vh);
+      right: calc((825px / 1920px) * 100%);
     }
     #tulip {
-      top: 670px;
-      left: 110px;
+      top: calc((670px / 950px) * 100vh);
+      left: calc((110px / 1920px) * 100%);
     }
   }
   .scroll {
@@ -175,37 +175,38 @@ body {
     margin: 0 auto;
   }
   .profile {
-    img {
+    .profileimg {
       position: absolute;
-      width: 650px;
-      border: 3px solid $default;
+      width: calc((650px / 1920px) * 100%);
+      height: auto;
+      border: 3px solid $default; /* 픽셀 단위로 유지됩니다. */
       z-index: 5;
-      top: 210px;
-      left: 280px;
+      top: calc((210px / 950px) * 100vh);
+      left: calc((280px / 1920px) * 100%);
     }
-    .box {
+    .profileimgbg {
       position: absolute;
       display: inline-block;
-      width: 650px;
-      height: 640px;
-      border: 3px solid $default;
-      top: 180px;
-      left: 250px;
+      width: calc((650px / 1920px) * 100%);
+      height: auto;
+      border: 3px solid $default; /* 픽셀 단위로 유지됩니다. */
+      top: calc((180px / 950px) * 100vh);
+      left: calc((250px / 1920px) * 100%);
     }
   }
   #about3d {
     position: absolute;
     z-index: 5;
-    bottom: 10px;
-    left: 120px;
+    bottom: calc((10px / 950px) * 100vh);
+    left: calc((120px / 1920px) * 100%);
     img {
       width: 300px;
     }
   }
   .info {
     text-align: left;
-    margin-left: 900px;
-    margin-top: 80px;
+    margin-left: calc((1000px / 1920px) * 100%);
+    margin-top: calc((80px / 950px) * 100vh);
     letter-spacing: -2px;
     .info_name {
       display: flex;
@@ -242,20 +243,20 @@ body {
       z-index: 5;
     }
     #heart {
-      top: 480px;
-      left: 330px;
+      top: calc((480px / 950px) * 100vh);
+      left: calc((330px / 1920px) * 100%);
     }
     #twinkle {
-      top: 300px;
-      left: 730px;
+      top: calc((300px / 950px) * 100vh);
+      left: calc((730px / 1920px) * 100%);
     }
     #star {
-      top: 250px;
-      right: 450px;
+      top: calc((250px / 950px) * 100vh);
+      right: calc((450px / 1920px) * 100%);
     }
     #plant {
-      bottom: 70px;
-      right: 150px;
+      bottom: calc((70px / 950px) * 100vh);
+      right: calc((150px / 1920px) * 100%);
     }
   }
 }
@@ -280,13 +281,13 @@ body {
     margin-top: 70px;
     .ppcover {
       width: 870px;
-      height: 552px;
+      height: calc((552px / 950px) * 100vh);
       border: 3px solid $default;
       border-radius: 20px;
       overflow: hidden;
       img {
         width: 100%;
-        transition: transform 0.8s ease;
+        transition: transform 3s ease;
       }
       &:hover img {
         transform: translateY(-2070px);
@@ -294,10 +295,10 @@ body {
     }
     .pp3d {
       position: absolute;
-      width: 250px;
+      width: calc((250px / 1920px) * 100%);
       z-index: 5;
-      bottom: 90px;
-      left: 870px;
+      bottom: calc((90px / 950px) * 100vh);
+      left: calc((850px / 1920px) * 100%);
     }
     .pptxt {
       text-align: left;
@@ -366,7 +367,7 @@ body {
     margin-top: 70px;
     .ppcover {
       width: 870px;
-      height: 552px;
+      height: calc((552px / 950px) * 100vh);
       border: 3px solid $default;
       border-radius: 20px;
       overflow: hidden;
@@ -380,10 +381,10 @@ body {
     }
     .pp3d {
       position: absolute;
-      width: 250px;
+      width: calc((250px / 1920px) * 100%);
       z-index: 5;
-      bottom: 90px;
-      left: 870px;
+      bottom: calc((90px / 950px) * 100vh);
+      left: calc((870px / 1920px) * 100%);
     }
     .pptxt {
       text-align: left;
@@ -452,7 +453,7 @@ body {
     margin-top: 70px;
     .ppcover {
       width: 870px;
-      height: auto;
+      height: calc((552px / 950px) * 100vh);
       border: 3px solid $default;
       border-radius: 20px;
     }
@@ -497,7 +498,6 @@ body {
   }
 }
 #contect {
-  position: relative;
   height: 100vh;
   padding: 60px 100px;
   margin-top: 20px;
@@ -516,8 +516,10 @@ body {
     align-items: center;
     margin-top: 70px;
     li {
+      position: relative;
       display: flex;
       flex-direction: column;
+      align-items: center;
       width: 400px;
       padding: 250px 0;
       border: 3px solid $default;
@@ -533,7 +535,153 @@ body {
         color: $default;
         margin-top: 10px;
         opacity: 0;
+        img {
+          position: absolute;
+          top: calc((100px / 950px) * 100vh);
+          left: calc((70px / 400px) * 100%);
+          width: calc((250px / 400px) * 100%);
+        }
       }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #main {
+    h1 {
+      margin-top: calc(25px + 28vh);
+    }
+    #main3d {
+      #P {
+        top: calc((370px / 950px) * 100vh);
+        left: calc((230px / 1920px) * 100%);
+        width: calc((175px / 1920px) * 100%);
+      }
+      #O {
+        top: calc((425px / 950px) * 100vh);
+        left: calc((358px / 1920px) * 100%);
+        width: calc((198px / 1920px) * 100%);
+      }
+      #R {
+        top: calc((387px / 950px) * 100vh);
+        left: calc((545px / 1920px) * 100%);
+        width: calc((190px / 1920px) * 100%);
+      }
+      #T {
+        top: calc((410px / 950px) * 100vh);
+        left: calc((715px / 1920px) * 100%);
+        width: calc((175px / 1920px) * 100%);
+      }
+      #F {
+        top: calc((430px / 950px) * 100vh);
+        left: calc((885px / 1920px) * 100%);
+        width: calc((170px / 1920px) * 100%);
+      }
+      #O2 {
+        top: calc((385px / 950px) * 100vh);
+        left: calc((1040px / 1920px) * 100%);
+        width: calc((197px / 1920px) * 100%);
+      }
+      #L {
+        top: calc((410px / 950px) * 100vh);
+        left: calc((1240px / 1920px) * 100%);
+        width: calc((152px / 1920px) * 100%);
+      }
+      #I {
+        top: calc((380px / 950px) * 100vh);
+        left: calc((1360px / 1920px) * 100%);
+        width: calc((113px / 1920px) * 100%);
+      }
+      #O3 {
+        top: calc((408px / 950px) * 100vh);
+        left: calc((1480px / 1920px) * 100%);
+        width: calc((197px / 1920px) * 100%);
+      }
+    }
+    .icon {
+      #star2 {
+        top: calc((300px / 950px) * 100vh);
+        left: calc((425px / 1920px) * 100%);
+      }
+      #twinkle {
+        top: calc((235px / 950px) * 100vh);
+        right: calc((500px / 1920px) * 100%);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #main {
+    h1 {
+      margin-top: calc(25px + 30vh);
+    }
+    .icon {
+      #star2 {
+        top: calc((300px / 950px) * 100vh);
+        left: calc((380px / 1920px) * 100%);
+      }
+      #twinkle {
+        top: calc((255px / 950px) * 100vh);
+        right: calc((450px / 1920px) * 100%);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #main {
+    h1 {
+      margin-top: calc(25px + 30vh);
+    }
+    #main3d {
+      #P {
+        top: calc((370px / 950px) * 100vh);
+        left: calc((230px / 1920px) * 100%);
+        width: calc((275px / 1920px) * 100%);
+      }
+      #O {
+        top: calc((405px / 950px) * 100vh);
+        left: calc((448px / 1920px) * 100%);
+        width: calc((298px / 1920px) * 100%);
+      }
+      #R {
+        top: calc((387px / 950px) * 100vh);
+        left: calc((735px / 1920px) * 100%);
+        width: calc((290px / 1920px) * 100%);
+      }
+      #T {
+        top: calc((400px / 950px) * 100vh);
+        left: calc((990px / 1920px) * 100%);
+        width: calc((275px / 1920px) * 100%);
+      }
+      #F {
+        top: calc((490px / 950px) * 100vh);
+        left: calc((480px / 1920px) * 100%);
+        width: calc((270px / 1920px) * 100%);
+      }
+      #O2 {
+        top: calc((470px / 950px) * 100vh);
+        left: calc((740px / 1920px) * 100%);
+        width: calc((297px / 1920px) * 100%);
+      }
+      #L {
+        top: calc((480px / 950px) * 100vh);
+        left: calc((1050px / 1920px) * 100%);
+        width: calc((252px / 1920px) * 100%);
+      }
+      #I {
+        top: calc((460px / 950px) * 100vh);
+        left: calc((1250px / 1920px) * 100%);
+        width: calc((180px / 1920px) * 100%);
+      }
+      #O3 {
+        top: calc((490px / 950px) * 100vh);
+        left: calc((1440px / 1920px) * 100%);
+        width: calc((297px / 1920px) * 100%);
+      }
+    }
+    .icon {
     }
   }
 }

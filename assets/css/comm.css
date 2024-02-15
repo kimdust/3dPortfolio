@@ -313,101 +313,101 @@ body {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 120px;
+  font-size: calc(12px + 7vw);
   font-weight: 600;
-  letter-spacing: -5px;
-  margin-top: 250px;
+  letter-spacing: -0.5vw;
+  margin-top: calc(25px + 22vh);
   border: 3px solid #222;
-  padding: 0 100px;
-  border-radius: 100px;
+  padding: 0 calc(10px + 4vw);
+  border-radius: 300px;
 }
 #main #main3d img {
   position: absolute;
   z-index: 100;
 }
 #main #main3d #P {
-  top: 370px;
-  left: 350px;
-  width: 145px;
+  top: 38.9473684211vh;
+  left: 18.2291666667%;
+  width: 7.5520833333%;
 }
 #main #main3d #O {
-  top: 425px;
-  left: 474px;
-  width: 168px;
+  top: 44.7368421053vh;
+  left: 24.6875%;
+  width: 8.75%;
 }
 #main #main3d #R {
-  top: 387px;
-  left: 640px;
-  width: 160px;
+  top: 40.7368421053vh;
+  left: 33.3333333333%;
+  width: 8.3333333333%;
 }
 #main #main3d #T {
-  top: 410px;
-  left: 783px;
-  width: 145px;
+  top: 43.1578947368vh;
+  left: 40.78125%;
+  width: 7.5520833333%;
 }
 #main #main3d #F {
-  top: 430px;
-  left: 924px;
-  width: 140px;
+  top: 45.2631578947vh;
+  left: 48.125%;
+  width: 7.2916666667%;
 }
 #main #main3d #O2 {
-  top: 385px;
-  left: 1053px;
-  width: 167px;
+  top: 40.5263157895vh;
+  left: 54.84375%;
+  width: 8.6979166667%;
 }
 #main #main3d #L {
-  top: 410px;
-  left: 1228px;
-  width: 122px;
+  top: 43.1578947368vh;
+  left: 63.9583333333%;
+  width: 6.3541666667%;
 }
 #main #main3d #I {
-  top: 380px;
-  left: 1338px;
-  width: 83px;
+  top: 40vh;
+  left: 69.6875%;
+  width: 4.3229166667%;
 }
 #main #main3d #O3 {
-  top: 408px;
-  left: 1422px;
-  width: 167px;
+  top: 42.9473684211vh;
+  left: 74.0625%;
+  width: 8.6979166667%;
 }
 #main .icon .main_icon {
   position: absolute;
 }
 #main .icon #heart {
-  top: 65px;
-  left: 155px;
+  top: 6.8421052632vh;
+  left: 8.0729166667%;
 }
 #main .icon #ring {
-  top: 120px;
-  left: 755px;
+  top: 12.6315789474vh;
+  left: 39.3229166667%;
 }
 #main .icon #star2 {
-  top: 300px;
-  left: 455px;
+  top: 31.5789473684vh;
+  left: 23.6979166667%;
 }
 #main .icon #sun {
-  top: 75px;
-  right: 200px;
+  top: 7.8947368421vh;
+  right: 10.4166666667%;
 }
 #main .icon #twinkle {
-  top: 225px;
-  right: 570px;
+  top: 21.5789473684vh;
+  right: 27.6041666667%;
 }
 #main .icon #star {
-  top: 440px;
-  right: 105px;
+  top: 46.3157894737vh;
+  right: 5.46875%;
 }
 #main .icon #dust {
-  top: 720px;
-  right: 150px;
+  top: 75.7894736842vh;
+  right: 7.8125%;
 }
 #main .icon #flower {
-  top: 650px;
-  right: 825px;
+  top: 68.4210526316vh;
+  right: 42.96875%;
 }
 #main .icon #tulip {
-  top: 670px;
-  left: 110px;
+  top: 70.5263157895vh;
+  left: 5.7291666667%;
 }
 #main .scroll {
   padding-top: 820px;
@@ -431,36 +431,37 @@ body {
   width: 300px;
   margin: 0 auto;
 }
-#about .profile img {
+#about .profile .profileimg {
   position: absolute;
-  width: 650px;
-  border: 3px solid #222;
+  width: 33.8541666667%;
+  height: auto;
+  border: 3px solid #222; /* 픽셀 단위로 유지됩니다. */
   z-index: 5;
-  top: 210px;
-  left: 280px;
+  top: 22.1052631579vh;
+  left: 14.5833333333%;
 }
-#about .profile .box {
+#about .profile .profileimgbg {
   position: absolute;
   display: inline-block;
-  width: 650px;
-  height: 640px;
-  border: 3px solid #222;
-  top: 180px;
-  left: 250px;
+  width: 33.8541666667%;
+  height: auto;
+  border: 3px solid #222; /* 픽셀 단위로 유지됩니다. */
+  top: 18.9473684211vh;
+  left: 13.0208333333%;
 }
 #about #about3d {
   position: absolute;
   z-index: 5;
-  bottom: 10px;
-  left: 120px;
+  bottom: 1.0526315789vh;
+  left: 6.25%;
 }
 #about #about3d img {
   width: 300px;
 }
 #about .info {
   text-align: left;
-  margin-left: 900px;
-  margin-top: 80px;
+  margin-left: 52.0833333333%;
+  margin-top: 8.4210526316vh;
   letter-spacing: -2px;
 }
 #about .info .info_name {
@@ -496,20 +497,20 @@ body {
   z-index: 5;
 }
 #about .icon #heart {
-  top: 480px;
-  left: 330px;
+  top: 50.5263157895vh;
+  left: 17.1875%;
 }
 #about .icon #twinkle {
-  top: 300px;
-  left: 730px;
+  top: 31.5789473684vh;
+  left: 38.0208333333%;
 }
 #about .icon #star {
-  top: 250px;
-  right: 450px;
+  top: 26.3157894737vh;
+  right: 23.4375%;
 }
 #about .icon #plant {
-  bottom: 70px;
-  right: 150px;
+  bottom: 7.3684210526vh;
+  right: 7.8125%;
 }
 
 #pp1 {
@@ -535,24 +536,24 @@ body {
 }
 #pp1 .pp_inner .ppcover {
   width: 870px;
-  height: 552px;
+  height: 58.1052631579vh;
   border: 3px solid #222;
   border-radius: 20px;
   overflow: hidden;
 }
 #pp1 .pp_inner .ppcover img {
   width: 100%;
-  transition: transform 0.8s ease;
+  transition: transform 3s ease;
 }
 #pp1 .pp_inner .ppcover:hover img {
   transform: translateY(-2070px);
 }
 #pp1 .pp_inner .pp3d {
   position: absolute;
-  width: 250px;
+  width: 13.0208333333%;
   z-index: 5;
-  bottom: 90px;
-  left: 870px;
+  bottom: 9.4736842105vh;
+  left: 44.2708333333%;
 }
 #pp1 .pp_inner .pptxt {
   text-align: left;
@@ -622,7 +623,7 @@ body {
 }
 #pp2 .pp_inner .ppcover {
   width: 870px;
-  height: 552px;
+  height: 58.1052631579vh;
   border: 3px solid #222;
   border-radius: 20px;
   overflow: hidden;
@@ -636,10 +637,10 @@ body {
 }
 #pp2 .pp_inner .pp3d {
   position: absolute;
-  width: 250px;
+  width: 13.0208333333%;
   z-index: 5;
-  bottom: 90px;
-  left: 870px;
+  bottom: 9.4736842105vh;
+  left: 45.3125%;
 }
 #pp2 .pp_inner .pptxt {
   text-align: left;
@@ -709,7 +710,7 @@ body {
 }
 #pp3 .pp_inner .ppcover {
   width: 870px;
-  height: auto;
+  height: 58.1052631579vh;
   border: 3px solid #222;
   border-radius: 20px;
 }
@@ -753,7 +754,6 @@ body {
 }
 
 #contect {
-  position: relative;
   height: 100vh;
   padding: 60px 100px;
   margin-top: 20px;
@@ -774,8 +774,10 @@ body {
   margin-top: 70px;
 }
 #contect ul li {
+  position: relative;
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 400px;
   padding: 250px 0;
   border: 3px solid #222;
@@ -793,3 +795,131 @@ body {
   margin-top: 10px;
   opacity: 0;
 }
+#contect ul li a img {
+  position: absolute;
+  top: 10.5263157895vh;
+  left: 17.5%;
+  width: 62.5%;
+}
+
+@media screen and (max-width: 1024px) {
+  #main h1 {
+    margin-top: calc(25px + 28vh);
+  }
+  #main #main3d #P {
+    top: 38.9473684211vh;
+    left: 11.9791666667%;
+    width: 9.1145833333%;
+  }
+  #main #main3d #O {
+    top: 44.7368421053vh;
+    left: 18.6458333333%;
+    width: 10.3125%;
+  }
+  #main #main3d #R {
+    top: 40.7368421053vh;
+    left: 28.3854166667%;
+    width: 9.8958333333%;
+  }
+  #main #main3d #T {
+    top: 43.1578947368vh;
+    left: 37.2395833333%;
+    width: 9.1145833333%;
+  }
+  #main #main3d #F {
+    top: 45.2631578947vh;
+    left: 46.09375%;
+    width: 8.8541666667%;
+  }
+  #main #main3d #O2 {
+    top: 40.5263157895vh;
+    left: 54.1666666667%;
+    width: 10.2604166667%;
+  }
+  #main #main3d #L {
+    top: 43.1578947368vh;
+    left: 64.5833333333%;
+    width: 7.9166666667%;
+  }
+  #main #main3d #I {
+    top: 40vh;
+    left: 70.8333333333%;
+    width: 5.8854166667%;
+  }
+  #main #main3d #O3 {
+    top: 42.9473684211vh;
+    left: 77.0833333333%;
+    width: 10.2604166667%;
+  }
+  #main .icon #star2 {
+    top: 31.5789473684vh;
+    left: 22.1354166667%;
+  }
+  #main .icon #twinkle {
+    top: 24.7368421053vh;
+    right: 26.0416666667%;
+  }
+}
+@media screen and (max-width: 768px) {
+  #main h1 {
+    margin-top: calc(25px + 30vh);
+  }
+  #main .icon #star2 {
+    top: 31.5789473684vh;
+    left: 19.7916666667%;
+  }
+  #main .icon #twinkle {
+    top: 26.8421052632vh;
+    right: 23.4375%;
+  }
+}
+@media screen and (max-width: 480px) {
+  #main h1 {
+    margin-top: calc(25px + 30vh);
+  }
+  #main #main3d #P {
+    top: 38.9473684211vh;
+    left: 11.9791666667%;
+    width: 14.3229166667%;
+  }
+  #main #main3d #O {
+    top: 42.6315789474vh;
+    left: 23.3333333333%;
+    width: 15.5208333333%;
+  }
+  #main #main3d #R {
+    top: 40.7368421053vh;
+    left: 38.28125%;
+    width: 15.1041666667%;
+  }
+  #main #main3d #T {
+    top: 42.1052631579vh;
+    left: 51.5625%;
+    width: 14.3229166667%;
+  }
+  #main #main3d #F {
+    top: 51.5789473684vh;
+    left: 25%;
+    width: 14.0625%;
+  }
+  #main #main3d #O2 {
+    top: 49.4736842105vh;
+    left: 38.5416666667%;
+    width: 15.46875%;
+  }
+  #main #main3d #L {
+    top: 50.5263157895vh;
+    left: 54.6875%;
+    width: 13.125%;
+  }
+  #main #main3d #I {
+    top: 48.4210526316vh;
+    left: 65.1041666667%;
+    width: 9.375%;
+  }
+  #main #main3d #O3 {
+    top: 51.5789473684vh;
+    left: 75%;
+    width: 15.46875%;
+  }
+}/*# sourceMappingURL=comm.css.map */
