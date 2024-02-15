@@ -630,6 +630,9 @@ body {
 }
 
 @media screen and (max-width: 480px) {
+  #fp-nav {
+    display: none;
+  }
   #main {
     h1 {
       margin-top: calc(25px + 30vh);
@@ -657,31 +660,34 @@ body {
       }
       #F {
         top: calc((490px / 950px) * 100vh);
-        left: calc((480px / 1920px) * 100%);
+        left: calc((470px / 1920px) * 100%);
         width: calc((270px / 1920px) * 100%);
       }
       #O2 {
         top: calc((470px / 950px) * 100vh);
-        left: calc((740px / 1920px) * 100%);
+        left: calc((730px / 1920px) * 100%);
         width: calc((297px / 1920px) * 100%);
       }
       #L {
         top: calc((480px / 950px) * 100vh);
-        left: calc((1050px / 1920px) * 100%);
+        left: calc((1040px / 1920px) * 100%);
         width: calc((252px / 1920px) * 100%);
       }
       #I {
         top: calc((460px / 950px) * 100vh);
-        left: calc((1250px / 1920px) * 100%);
+        left: calc((1240px / 1920px) * 100%);
         width: calc((180px / 1920px) * 100%);
       }
       #O3 {
         top: calc((490px / 950px) * 100vh);
-        left: calc((1440px / 1920px) * 100%);
+        left: calc((1430px / 1920px) * 100%);
         width: calc((297px / 1920px) * 100%);
       }
     }
     .icon {
+      img {
+        width: 30%;
+      }
     }
   }
 }

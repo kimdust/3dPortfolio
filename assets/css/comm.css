@@ -874,6 +874,9 @@ body {
   }
 }
 @media screen and (max-width: 480px) {
+  #fp-nav {
+    display: none;
+  }
   #main h1 {
     margin-top: calc(25px + 30vh);
   }
@@ -899,27 +902,30 @@ body {
   }
   #main #main3d #F {
     top: 51.5789473684vh;
-    left: 25%;
+    left: 24.4791666667%;
     width: 14.0625%;
   }
   #main #main3d #O2 {
     top: 49.4736842105vh;
-    left: 38.5416666667%;
+    left: 38.0208333333%;
     width: 15.46875%;
   }
   #main #main3d #L {
     top: 50.5263157895vh;
-    left: 54.6875%;
+    left: 54.1666666667%;
     width: 13.125%;
   }
   #main #main3d #I {
     top: 48.4210526316vh;
-    left: 65.1041666667%;
+    left: 64.5833333333%;
     width: 9.375%;
   }
   #main #main3d #O3 {
     top: 51.5789473684vh;
-    left: 75%;
+    left: 74.4791666667%;
     width: 15.46875%;
+  }
+  #main .icon img {
+    width: 30%;
   }
 }/*# sourceMappingURL=comm.css.map */

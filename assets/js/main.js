@@ -7,7 +7,7 @@ $(document).ready(function () {
 
 // 인트로 3d
 document.addEventListener("DOMContentLoaded", function () {
-  gsap.set("#main3d img", { y: "-500%" }); // 초기 위치 설정
+  gsap.set("#main3d img", { y: "-900%" }); // 초기 위치 설정
 
   gsap.utils.toArray("#main3d img").forEach((img, index) => {
     gsap.to(img, {
