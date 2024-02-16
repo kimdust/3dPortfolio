@@ -967,7 +967,7 @@ body {
     padding: 40px 30px;
   }
   #about h2 {
-    font-size: 25px;
+    font-size: 20px;
     width: 150px;
   }
   #about .profile {
@@ -978,12 +978,12 @@ body {
     margin-top: -40px;
   }
   #about #about3d img {
-    width: 260px;
+    width: 240px;
   }
   #about .info {
     text-align: center;
     margin-left: 0;
-    margin-top: -20px;
+    margin-top: -30px;
     letter-spacing: -2px;
   }
   #about .info .info_name {
