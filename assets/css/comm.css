@@ -877,6 +877,9 @@ body {
   }
 }
 @media screen and (max-width: 480px) {
+  #mouse_pointer {
+    display: none;
+  }
   #fp-nav {
     display: none;
   }
@@ -972,14 +975,15 @@ body {
   }
   #about #about3d {
     position: static;
+    margin-top: -40px;
   }
   #about #about3d img {
-    width: 300px;
+    width: 260px;
   }
   #about .info {
     text-align: center;
     margin-left: 0;
-    margin-top: 0;
+    margin-top: -20px;
     letter-spacing: -2px;
   }
   #about .info .info_name {
