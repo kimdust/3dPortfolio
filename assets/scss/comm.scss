@@ -113,7 +113,7 @@ body {
     }
   }
   .icon {
-    .main_icon {
+    img {
       position: absolute;
     }
     #heart {
@@ -152,6 +152,9 @@ body {
       top: calc((670px / 950px) * 100vh);
       left: calc((110px / 1920px) * 100%);
     }
+  }
+  .icon_mobile {
+    display: none;
   }
   .scroll {
     padding-top: 820px;
@@ -238,7 +241,7 @@ body {
     }
   }
   .icon {
-    .about_icon {
+    img {
       position: absolute;
       z-index: 5;
     }
@@ -635,59 +638,129 @@ body {
   }
   #main {
     h1 {
-      margin-top: calc(25px + 30vh);
+      margin-top: calc(25px + 33vh);
     }
     #main3d {
       #P {
-        top: calc((370px / 950px) * 100vh);
+        top: calc((320px / 800px) * 100vh);
         left: calc((230px / 1920px) * 100%);
         width: calc((275px / 1920px) * 100%);
       }
       #O {
-        top: calc((405px / 950px) * 100vh);
+        top: calc((355px / 800px) * 100vh);
         left: calc((448px / 1920px) * 100%);
         width: calc((298px / 1920px) * 100%);
       }
       #R {
-        top: calc((387px / 950px) * 100vh);
+        top: calc((337px / 800px) * 100vh);
         left: calc((735px / 1920px) * 100%);
         width: calc((290px / 1920px) * 100%);
       }
       #T {
-        top: calc((400px / 950px) * 100vh);
+        top: calc((350px / 800px) * 100vh);
         left: calc((990px / 1920px) * 100%);
         width: calc((275px / 1920px) * 100%);
       }
       #F {
-        top: calc((490px / 950px) * 100vh);
+        top: calc((440px / 800px) * 100vh);
         left: calc((470px / 1920px) * 100%);
         width: calc((270px / 1920px) * 100%);
       }
       #O2 {
-        top: calc((470px / 950px) * 100vh);
+        top: calc((420px / 800px) * 100vh);
         left: calc((730px / 1920px) * 100%);
         width: calc((297px / 1920px) * 100%);
       }
       #L {
-        top: calc((480px / 950px) * 100vh);
+        top: calc((430px / 800px) * 100vh);
         left: calc((1040px / 1920px) * 100%);
         width: calc((252px / 1920px) * 100%);
       }
       #I {
-        top: calc((460px / 950px) * 100vh);
+        top: calc((410px / 800px) * 100vh);
         left: calc((1240px / 1920px) * 100%);
         width: calc((180px / 1920px) * 100%);
       }
       #O3 {
-        top: calc((490px / 950px) * 100vh);
+        top: calc((440px / 800px) * 100vh);
         left: calc((1430px / 1920px) * 100%);
         width: calc((297px / 1920px) * 100%);
       }
     }
     .icon {
+      display: none;
+    }
+    .icon_mobile {
+      display: block;
       img {
-        width: 30%;
+        position: absolute;
       }
+      #mheart {
+        top: calc((80px / 950px) * 100vh);
+        left: calc((100px / 480px) * 100%);
+      }
+      #mstar {
+        top: calc((320px / 950px) * 100vh);
+        left: calc((50px / 480px) * 100%);
+      }
+      #mtwinkle {
+        top: calc((260px / 950px) * 100vh);
+        left: calc((350px / 480px) * 100%);
+      }
+      #mdust {
+        top: calc((730px / 950px) * 100vh);
+        left: calc((290px / 480px) * 100%);
+      }
+      #mflower {
+        top: calc((670px / 950px) * 100vh);
+        left: calc((80px / 480px) * 100%);
+      }
+    }
+    .scroll {
+      display: none;
+    }
+  }
+  #about {
+    padding: 40px 30px;
+    h2 {
+      font-size: 25px;
+      width: 150px;
+    }
+    .profile {
+      display: none;
+    }
+    #about3d {
+      position: static;
+      img {
+        width: 300px;
+      }
+    }
+    .info {
+      text-align: center;
+      margin-left: 0;
+      margin-top: 0;
+      letter-spacing: -2px;
+      .info_name {
+        font-size: 30px;
+        justify-content: center;
+      }
+      p {
+        font-size: 20px;
+        margin-bottom: 15px;
+      }
+      .info_tit {
+        font-size: 20px;
+        .info_2depth {
+          font-size: 16px;
+          margin-bottom: 15px;
+          img {
+            width: 35px;
+          }
+        }
+      }
+    }
+    .icon {
+      display: none;
     }
   }
 }

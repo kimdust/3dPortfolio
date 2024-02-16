@@ -370,7 +370,7 @@ body {
   left: 74.0625%;
   width: 8.6979166667%;
 }
-#main .icon .main_icon {
+#main .icon img {
   position: absolute;
 }
 #main .icon #heart {
@@ -408,6 +408,9 @@ body {
 #main .icon #tulip {
   top: 70.5263157895vh;
   left: 5.7291666667%;
+}
+#main .icon_mobile {
+  display: none;
 }
 #main .scroll {
   padding-top: 820px;
@@ -492,7 +495,7 @@ body {
 #about .info .info_tit .info_2depth img {
   width: 55px;
 }
-#about .icon .about_icon {
+#about .icon img {
   position: absolute;
   z-index: 5;
 }
@@ -878,54 +881,126 @@ body {
     display: none;
   }
   #main h1 {
-    margin-top: calc(25px + 30vh);
+    margin-top: calc(25px + 33vh);
   }
   #main #main3d #P {
-    top: 38.9473684211vh;
+    top: 40vh;
     left: 11.9791666667%;
     width: 14.3229166667%;
   }
   #main #main3d #O {
-    top: 42.6315789474vh;
+    top: 44.375vh;
     left: 23.3333333333%;
     width: 15.5208333333%;
   }
   #main #main3d #R {
-    top: 40.7368421053vh;
+    top: 42.125vh;
     left: 38.28125%;
     width: 15.1041666667%;
   }
   #main #main3d #T {
-    top: 42.1052631579vh;
+    top: 43.75vh;
     left: 51.5625%;
     width: 14.3229166667%;
   }
   #main #main3d #F {
-    top: 51.5789473684vh;
+    top: 55vh;
     left: 24.4791666667%;
     width: 14.0625%;
   }
   #main #main3d #O2 {
-    top: 49.4736842105vh;
+    top: 52.5vh;
     left: 38.0208333333%;
     width: 15.46875%;
   }
   #main #main3d #L {
-    top: 50.5263157895vh;
+    top: 53.75vh;
     left: 54.1666666667%;
     width: 13.125%;
   }
   #main #main3d #I {
-    top: 48.4210526316vh;
+    top: 51.25vh;
     left: 64.5833333333%;
     width: 9.375%;
   }
   #main #main3d #O3 {
-    top: 51.5789473684vh;
+    top: 55vh;
     left: 74.4791666667%;
     width: 15.46875%;
   }
-  #main .icon img {
-    width: 30%;
+  #main .icon {
+    display: none;
+  }
+  #main .icon_mobile {
+    display: block;
+  }
+  #main .icon_mobile img {
+    position: absolute;
+  }
+  #main .icon_mobile #mheart {
+    top: 8.4210526316vh;
+    left: 20.8333333333%;
+  }
+  #main .icon_mobile #mstar {
+    top: 33.6842105263vh;
+    left: 10.4166666667%;
+  }
+  #main .icon_mobile #mtwinkle {
+    top: 27.3684210526vh;
+    left: 72.9166666667%;
+  }
+  #main .icon_mobile #mdust {
+    top: 76.8421052632vh;
+    left: 60.4166666667%;
+  }
+  #main .icon_mobile #mflower {
+    top: 70.5263157895vh;
+    left: 16.6666666667%;
+  }
+  #main .scroll {
+    display: none;
+  }
+  #about {
+    padding: 40px 30px;
+  }
+  #about h2 {
+    font-size: 25px;
+    width: 150px;
+  }
+  #about .profile {
+    display: none;
+  }
+  #about #about3d {
+    position: static;
+  }
+  #about #about3d img {
+    width: 300px;
+  }
+  #about .info {
+    text-align: center;
+    margin-left: 0;
+    margin-top: 0;
+    letter-spacing: -2px;
+  }
+  #about .info .info_name {
+    font-size: 30px;
+    justify-content: center;
+  }
+  #about .info p {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  #about .info .info_tit {
+    font-size: 20px;
+  }
+  #about .info .info_tit .info_2depth {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  #about .info .info_tit .info_2depth img {
+    width: 35px;
+  }
+  #about .icon {
+    display: none;
   }
 }/*# sourceMappingURL=comm.css.map */
