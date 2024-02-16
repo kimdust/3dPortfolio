@@ -806,6 +806,9 @@ body {
 }
 
 @media screen and (max-width: 1024px) {
+  #fp-nav {
+    display: none;
+  }
   #main h1 {
     margin-top: calc(25px + 28vh);
   }
@@ -861,6 +864,298 @@ body {
   #main .icon #twinkle {
     top: 24.7368421053vh;
     right: 26.0416666667%;
+  }
+  #about {
+    position: relative;
+    height: 100vh;
+    padding: 40px 60px;
+  }
+  #about h2 {
+    font-size: 40px;
+    width: 250px;
+    border: 2px solid #222;
+  }
+  #about .profile .profileimg {
+    border: 2px solid #222;
+    width: 39.0625%;
+    top: 21.0526315789vh;
+    left: 7.8125%;
+  }
+  #about .profile .profileimgbg {
+    border: 2px solid #222;
+    width: 39.0625%;
+    top: 18.9473684211vh;
+    left: 5.859375%;
+  }
+  #about #about3d {
+    top: 57.8947368421vh;
+    left: 10.4166666667%;
+  }
+  #about #about3d img {
+    width: 330px;
+  }
+  #about .info {
+    text-align: left;
+    margin-left: 450px;
+    margin-top: 15.7894736842vh;
+    letter-spacing: -2px;
+  }
+  #about .info .info_name {
+    display: flex;
+    font-size: 43px;
+  }
+  #about .info p {
+    font-size: 24px;
+    margin-bottom: 50px;
+  }
+  #about .info .info_tit {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  #about .info .info_tit .info_2depth {
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 50px;
+  }
+  #about .info .info_tit .info_2depth img {
+    width: 40px;
+  }
+  #about .icon {
+    display: none;
+  }
+  #pp1 {
+    position: relative;
+    height: 100vh;
+    padding: 40px 60px;
+  }
+  #pp1 h2 {
+    font-size: 40px;
+    width: 250px;
+    border: 2px solid #222;
+  }
+  #pp1 .pp_inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 30px;
+  }
+  #pp1 .pp_inner .ppcover {
+    width: 100%;
+    height: 48.4210526316vh;
+    border: 1px solid #222;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  #pp1 .pp_inner .ppcover img {
+    width: 100%;
+    transition: transform 3s ease;
+  }
+  #pp1 .pp_inner .ppcover:hover img {
+    transform: translateY(-2250px);
+  }
+  #pp1 .pp_inner .pp3d {
+    position: absolute;
+    width: 19.53125%;
+    z-index: 5;
+    top: 7.3684210526vh;
+    left: 75%;
+  }
+  #pp1 .pp_inner .pptxt {
+    margin-left: 0;
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  #pp1 .pp_inner .pptxt img {
+    height: 20px;
+  }
+  #pp1 .pp_inner .pptxt h3 {
+    font-size: 25px;
+    font-weight: 600;
+  }
+  #pp1 .pp_inner .pptxt ul {
+    padding: 10px 0 30px 0;
+  }
+  #pp1 .pp_inner .pptxt ul li {
+    display: flex;
+    font-size: 18px;
+  }
+  #pp1 .pp_inner .pptxt ul li strong {
+    margin-right: 16px;
+  }
+  #pp1 .pp_inner .pptxt .pp_desc {
+    display: none;
+  }
+  #pp1 .pp_inner .pptxt .pp_btn {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    width: 300px;
+  }
+  #pp1 .pp_inner .pptxt .pp_btn button {
+    margin-right: 0;
+    border: 1px solid #222;
+    height: 60px;
+    margin-bottom: 10px;
+    border-radius: 50px;
+  }
+  #pp1 .pp_inner .pptxt .pp_btn button a {
+    font-size: 20px;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+  }
+  #pp2 {
+    position: relative;
+    height: 100vh;
+    padding: 40px 60px;
+  }
+  #pp2 h2 {
+    font-size: 40px;
+    width: 250px;
+    border: 2px solid #222;
+  }
+  #pp2 .pp_inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 30px;
+  }
+  #pp2 .pp_inner .ppcover {
+    width: 100%;
+    height: 48.4210526316vh;
+    border: 1px solid #222;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  #pp2 .pp_inner .ppcover img {
+    width: 100%;
+    transition: transform 0.8s ease;
+  }
+  #pp2 .pp_inner .ppcover:hover img {
+    transform: translateY(-545px);
+  }
+  #pp2 .pp_inner .pp3d {
+    position: absolute;
+    width: 19.53125%;
+    z-index: 5;
+    top: 7.3684210526vh;
+    left: 75%;
+  }
+  #pp2 .pp_inner .pptxt {
+    margin-left: 0;
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  #pp2 .pp_inner .pptxt img {
+    height: 20px;
+  }
+  #pp2 .pp_inner .pptxt h3 {
+    font-size: 25px;
+    font-weight: 600;
+  }
+  #pp2 .pp_inner .pptxt ul {
+    padding: 10px 0 30px 0;
+  }
+  #pp2 .pp_inner .pptxt ul li {
+    display: flex;
+    font-size: 18px;
+  }
+  #pp2 .pp_inner .pptxt ul li strong {
+    margin-right: 16px;
+  }
+  #pp2 .pp_inner .pptxt .pp_desc {
+    display: none;
+  }
+  #pp2 .pp_inner .pptxt .pp_btn {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    width: 300px;
+  }
+  #pp2 .pp_inner .pptxt .pp_btn button {
+    margin-right: 0;
+    border: 1px solid #222;
+    height: 60px;
+    margin-bottom: 10px;
+    border-radius: 50px;
+  }
+  #pp2 .pp_inner .pptxt .pp_btn button a {
+    font-size: 20px;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+  }
+  #pp3 {
+    position: relative;
+    height: 100vh;
+    padding: 40px 60px;
+  }
+  #pp3 h2 {
+    font-size: 40px;
+    width: 250px;
+    border: 2px solid #222;
+  }
+  #pp3 .pp_inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 30px;
+  }
+  #pp3 .pp_inner .ppcover {
+    width: 100%;
+    height: 48.4210526316vh;
+    border: 1px solid #222;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  #pp3 .pp_inner .ppcover img {
+    width: 100%;
+    transition: transform 0.8s ease;
+  }
+  #pp3 .pp_inner .ppcover:hover img {
+    transform: translateY(-545px);
+  }
+  #pp3 .pp_inner .pp3d {
+    position: absolute;
+    width: 19.53125%;
+    z-index: 5;
+    top: 7.3684210526vh;
+    left: 75%;
+  }
+  #pp3 .pp_inner .pptxt {
+    margin-left: 0;
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  #pp3 .pp_inner .pptxt img {
+    height: 20px;
+  }
+  #pp3 .pp_inner .pptxt h3 {
+    font-size: 25px;
+    font-weight: 600;
+  }
+  #pp3 .pp_inner .pptxt ul {
+    padding: 10px 0 30px 0;
+  }
+  #pp3 .pp_inner .pptxt ul li {
+    display: flex;
+    font-size: 18px;
+  }
+  #pp3 .pp_inner .pptxt ul li strong {
+    margin-right: 16px;
+  }
+  #pp3 .pp_inner .pptxt .pp_desc {
+    display: block;
+    font-size: 18px;
   }
 }
 @media screen and (max-width: 768px) {
