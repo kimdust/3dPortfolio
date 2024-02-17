@@ -713,16 +713,20 @@ body {
 }
 #pp3 .pp_inner .ppcover {
   width: 870px;
-  height: 58.1052631579vh;
+  height: 552px;
   border: 3px solid #222;
   border-radius: 20px;
+  overflow: hidden;
+}
+#pp3 .pp_inner .ppcover img {
+  width: 100%;
 }
 #pp3 .pp_inner .pp3d {
   position: absolute;
-  width: 250px;
+  width: 13.0208333333%;
   z-index: 5;
-  bottom: 90px;
-  left: 860px;
+  bottom: 9.4736842105vh;
+  left: 45.3125%;
 }
 #pp3 .pp_inner .pptxt {
   text-align: left;
@@ -730,7 +734,7 @@ body {
   letter-spacing: -2px;
 }
 #pp3 .pp_inner .pptxt img {
-  width: 200px;
+  height: 40px;
 }
 #pp3 .pp_inner .pptxt h3 {
   font-size: 30px;
@@ -1280,6 +1284,8 @@ body {
     margin-left: 0;
     margin-top: 30px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
   }
   #pp1 .pp_inner .pptxt img {
     height: 20px;
@@ -1305,6 +1311,7 @@ body {
     display: flex;
     flex-direction: column;
     margin-top: 10px;
+    width: 100%;
   }
   #pp1 .pp_inner .pptxt .pp_btn button {
     margin-right: 0;
@@ -1361,6 +1368,8 @@ body {
     margin-left: 0;
     margin-top: 30px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
   }
   #pp2 .pp_inner .pptxt img {
     height: 20px;
@@ -1386,6 +1395,7 @@ body {
     display: flex;
     flex-direction: column;
     margin-top: 10px;
+    width: 100%;
   }
   #pp2 .pp_inner .pptxt .pp_btn button {
     margin-right: 0;
@@ -1438,6 +1448,8 @@ body {
     margin-left: 0;
     margin-top: 30px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
   }
   #pp3 .pp_inner .pptxt img {
     height: 20px;
@@ -1459,6 +1471,45 @@ body {
   #pp3 .pp_inner .pptxt .pp_desc {
     display: block;
     font-size: 18px;
+  }
+  #contect {
+    position: relative;
+    height: 900px;
+    padding: 60px 30px;
+    margin-top: 0;
+  }
+  #contect h2 {
+    font-size: 23px;
+    width: 150px;
+    border: 2px solid #222;
+  }
+  #contect ul {
+    flex-direction: column;
+    margin-top: 30px;
+  }
+  #contect ul li {
+    width: 100%;
+    padding: 20px 0 50px 0;
+    border: 1px solid #222;
+    margin: 20px;
+  }
+  #contect ul li .la-github::before,
+  #contect ul li .la-phone::before,
+  #contect ul li .la-envelope::before {
+    display: none;
+  }
+  #contect ul li a {
+    font-size: 22px;
+    font-weight: 600;
+    color: #222;
+    margin-top: 10px;
+    opacity: 0;
+  }
+  #contect ul li a img {
+    position: static;
+    display: block;
+    width: 100px;
+    margin: 0 auto;
   }
 }
 @media screen and (max-width: 480px) {
@@ -1483,6 +1534,9 @@ body {
   }
   #scrollToTopBtn.show {
     right: 20px;
+  }
+  #main {
+    height: 900px;
   }
   #main h1 {
     margin-top: calc(25px + 33vh);
@@ -1565,7 +1619,7 @@ body {
     display: none;
   }
   #about {
-    height: 100vh;
+    height: 900px;
     padding: 60px 30px;
   }
   #about h2 {
@@ -1611,7 +1665,7 @@ body {
   }
   #pp1 {
     position: relative;
-    height: 100vh;
+    height: 900px;
     padding: 60px 30px;
     margin-top: 0;
   }
@@ -1652,6 +1706,8 @@ body {
     margin-left: 0;
     margin-top: 30px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
   }
   #pp1 .pp_inner .pptxt img {
     height: 20px;
@@ -1693,7 +1749,7 @@ body {
   }
   #pp2 {
     position: relative;
-    height: 100vh;
+    height: 900px;
     padding: 60px 30px;
     margin-top: 0;
   }
@@ -1734,6 +1790,8 @@ body {
     margin-left: 0;
     margin-top: 30px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
   }
   #pp2 .pp_inner .pptxt img {
     height: 20px;
@@ -1775,7 +1833,7 @@ body {
   }
   #pp3 {
     position: relative;
-    height: 100vh;
+    height: 900px;
     padding: 60px 30px;
     margin-top: 0;
   }
@@ -1812,6 +1870,8 @@ body {
     margin-left: 0;
     margin-top: 30px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
   }
   #pp3 .pp_inner .pptxt img {
     height: 20px;
@@ -1836,7 +1896,7 @@ body {
   }
   #contect {
     position: relative;
-    height: 100vh;
+    height: 900px;
     padding: 60px 30px;
     margin-top: 0;
   }

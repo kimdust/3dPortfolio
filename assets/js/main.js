@@ -1,6 +1,6 @@
 // 풀페이지
 $(document).ready(function () {
-  if ($(window).width() > 480) {
+  if ($(window).width() > 768) {
     $("#fullPage").fullpage({
       autoScrolling: true,
     });
@@ -14,9 +14,9 @@ document.addEventListener("DOMContentLoaded", function () {
   gsap.utils.toArray("#main3d img").forEach((img, index) => {
     gsap.to(img, {
       y: 0,
-      delay: index * 0.2, // 이미지마다 0.5초씩 지연
+      delay: index * 0.2,
       duration: 0.8,
-      ease: "power2.out", // 원하는 이징 함수 적용
+      ease: "power2.out",
       onComplete: function () {
         gsap.to("#main3d", {
           y: 20,
@@ -81,7 +81,7 @@ function removeHoverEffects() {
 }
 
 function checkScreenWidth() {
-  if (window.innerWidth > 480) {
+  if (window.innerWidth > 768) {
     addHoverEffects();
   } else {
     removeHoverEffects();
