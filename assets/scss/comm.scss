@@ -398,6 +398,108 @@ body {
         transition: transform 3s ease;
       }
       &:hover img {
+        transform: translateY(-400px);
+      }
+    }
+    .pp3d {
+      position: absolute;
+      width: calc((250px / 1920px) * 100%);
+      z-index: 5;
+      bottom: calc((90px / 950px) * 100vh);
+      left: calc((850px / 1920px) * 100%);
+    }
+    .pptxt {
+      text-align: left;
+      margin-left: 80px;
+      letter-spacing: -2px;
+      img {
+        height: 40px;
+      }
+      h3 {
+        font-size: 30px;
+        font-weight: 600;
+      }
+      ul {
+        padding: 30px 0 100px 0;
+        li {
+          display: flex;
+          font-size: 22px;
+          padding: 5px 0;
+          strong {
+            margin-right: 20px;
+            font-weight: 500;
+          }
+          p {
+            font-weight: 300;
+          }
+        }
+      }
+      .pp_desc {
+        font-size: 20px;
+        font-weight: 300;
+      }
+      .pp_btn {
+        margin-top: 30px;
+        button {
+          margin-right: 10px;
+          a {
+            color: $default;
+            font-size: 20px;
+            padding: 10px 15px;
+            border: 1px solid $default;
+            border-radius: 15px;
+          }
+        }
+      }
+    }
+  }
+  .icon {
+    img {
+      position: absolute;
+    }
+    #ring {
+      top: calc((80px / 950px) * 100vh);
+      left: calc((150px / 1920px) * 100%);
+    }
+    #flower {
+      top: calc((750px / 950px) * 100vh);
+      right: calc((250px / 1920px) * 100%);
+    }
+  }
+  .icon_mobile {
+    display: none;
+  }
+}
+#pp2 {
+  position: relative;
+  height: 100vh;
+  padding: 60px 100px;
+  margin-top: 20px;
+  h2 {
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: -2px;
+    border: 3px solid $default;
+    border-radius: 100px;
+    width: 300px;
+    margin: 0 auto;
+  }
+  .pp_inner {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 70px;
+    .ppcover {
+      width: 870px;
+      height: calc((552px / 950px) * 100vh);
+      border: 3px solid $default;
+      border-radius: 20px;
+      overflow: hidden;
+      img {
+        width: 100%;
+        transition: transform 3s ease;
+      }
+      &:hover img {
         transform: translateY(-2070px);
       }
     }
@@ -470,7 +572,7 @@ body {
     display: none;
   }
 }
-#pp2 {
+#pp3 {
   position: relative;
   height: 100vh;
   padding: 60px 100px;
@@ -572,7 +674,7 @@ body {
     display: none;
   }
 }
-#pp3 {
+#pp4 {
   position: relative;
   height: 100vh;
   padding: 60px 100px;
