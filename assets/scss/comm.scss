@@ -178,92 +178,57 @@ body {
     margin: 0 auto;
   }
   .profile {
+    display: flex;
+    margin-top: 70px;
+    justify-content: center;
     .profileimg {
-      position: absolute;
-      width: calc((650px / 1920px) * 100%);
-      height: auto;
-      border: 3px solid $default; /* 픽셀 단위로 유지됩니다. */
-      z-index: 5;
-      top: calc((210px / 950px) * 100vh);
-      left: calc((280px / 1920px) * 100%);
+      width: 37%;
+      img {
+        width: 100%;
+      }
     }
-    .profileimgbg {
-      position: absolute;
-      display: inline-block;
-      width: calc((650px / 1920px) * 100%);
-      height: auto;
-      border: 3px solid $default; /* 픽셀 단위로 유지됩니다. */
-      top: calc((180px / 950px) * 100vh);
-      left: calc((250px / 1920px) * 100%);
+    .info {
+      margin-left: 80px;
+      text-align: left;
+      letter-spacing: -2px;
+      .info_name {
+        display: flex;
+        font-size: 50px;
+        h3 {
+          font-weight: 800;
+          margin-right: 15px;
+          color: $primary;
+        }
+        h4 {
+          font-weight: lighter;
+        }
+      }
+      p {
+        font-size: 25px;
+        margin-bottom: 50px;
+      }
+      .info_tit {
+        font-size: 25px;
+        font-weight: 600;
+        .info_2depth {
+          font-size: 20px;
+          font-weight: normal;
+          margin-bottom: 40px;
+          img {
+            width: 50px;
+          }
+        }
+      }
     }
   }
   #about3d {
     position: absolute;
     z-index: 5;
     bottom: calc((10px / 950px) * 100vh);
-    left: calc((120px / 1920px) * 100%);
+    left: calc((230px / 1920px) * 100%);
     img {
       width: 300px;
     }
-  }
-  .info {
-    text-align: left;
-    margin-left: calc((1000px / 1920px) * 100%);
-    margin-top: calc((80px / 950px) * 100vh);
-    letter-spacing: -2px;
-    .info_name {
-      display: flex;
-      font-size: 60px;
-      h3 {
-        font-weight: 800;
-        margin-right: 15px;
-        color: $primary;
-      }
-      h4 {
-        font-weight: lighter;
-      }
-    }
-    p {
-      font-size: 30px;
-      margin-bottom: 50px;
-    }
-    .info_tit {
-      font-size: 30px;
-      font-weight: 600;
-      .info_2depth {
-        font-size: 24px;
-        font-weight: normal;
-        margin-bottom: 40px;
-        img {
-          width: 55px;
-        }
-      }
-    }
-  }
-  .icon {
-    img {
-      position: absolute;
-      z-index: 5;
-    }
-    #heart {
-      top: calc((480px / 950px) * 100vh);
-      left: calc((330px / 1920px) * 100%);
-    }
-    #twinkle {
-      top: calc((300px / 950px) * 100vh);
-      left: calc((730px / 1920px) * 100%);
-    }
-    #star {
-      top: calc((250px / 950px) * 100vh);
-      right: calc((450px / 1920px) * 100%);
-    }
-    #plant {
-      bottom: calc((70px / 950px) * 100vh);
-      right: calc((150px / 1920px) * 100%);
-    }
-  }
-  .icon_mobile {
-    display: none;
   }
 }
 #pp0 {
@@ -282,7 +247,7 @@ body {
   }
   .pp_inner {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: flex-start;
     margin-top: 70px;
     .ppcover {
@@ -304,11 +269,11 @@ body {
       width: calc((250px / 1920px) * 100%);
       z-index: 5;
       bottom: calc((90px / 950px) * 100vh);
-      left: calc((850px / 1920px) * 100%);
+      left: calc((820px / 1920px) * 100%);
     }
     .pptxt {
+      width: 38%;
       text-align: left;
-      margin-left: 80px;
       letter-spacing: -2px;
       img {
         height: 40px;
@@ -351,22 +316,6 @@ body {
       }
     }
   }
-  .icon {
-    img {
-      position: absolute;
-    }
-    #ring {
-      top: calc((80px / 950px) * 100vh);
-      left: calc((150px / 1920px) * 100%);
-    }
-    #flower {
-      top: calc((750px / 950px) * 100vh);
-      right: calc((250px / 1920px) * 100%);
-    }
-  }
-  .icon_mobile {
-    display: none;
-  }
 }
 #pp1 {
   position: relative;
@@ -384,7 +333,7 @@ body {
   }
   .pp_inner {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: flex-start;
     margin-top: 70px;
     .ppcover {
@@ -403,14 +352,14 @@ body {
     }
     .pp3d {
       position: absolute;
-      width: calc((250px / 1920px) * 100%);
+      width: calc((220px / 1920px) * 100%);
       z-index: 5;
       bottom: calc((90px / 950px) * 100vh);
-      left: calc((850px / 1920px) * 100%);
+      left: calc((840px / 1920px) * 100%);
     }
     .pptxt {
+      width: 38%;
       text-align: left;
-      margin-left: 80px;
       letter-spacing: -2px;
       img {
         height: 40px;
@@ -453,22 +402,6 @@ body {
       }
     }
   }
-  .icon {
-    img {
-      position: absolute;
-    }
-    #ring {
-      top: calc((80px / 950px) * 100vh);
-      left: calc((150px / 1920px) * 100%);
-    }
-    #flower {
-      top: calc((750px / 950px) * 100vh);
-      right: calc((250px / 1920px) * 100%);
-    }
-  }
-  .icon_mobile {
-    display: none;
-  }
 }
 #pp2 {
   position: relative;
@@ -486,7 +419,7 @@ body {
   }
   .pp_inner {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: flex-start;
     margin-top: 70px;
     .ppcover {
@@ -508,11 +441,11 @@ body {
       width: calc((250px / 1920px) * 100%);
       z-index: 5;
       bottom: calc((90px / 950px) * 100vh);
-      left: calc((850px / 1920px) * 100%);
+      left: calc((820px / 1920px) * 100%);
     }
     .pptxt {
+      width: 38%;
       text-align: left;
-      margin-left: 80px;
       letter-spacing: -2px;
       img {
         height: 40px;
@@ -555,22 +488,6 @@ body {
       }
     }
   }
-  .icon {
-    img {
-      position: absolute;
-    }
-    #ring {
-      top: calc((80px / 950px) * 100vh);
-      left: calc((150px / 1920px) * 100%);
-    }
-    #flower {
-      top: calc((750px / 950px) * 100vh);
-      right: calc((250px / 1920px) * 100%);
-    }
-  }
-  .icon_mobile {
-    display: none;
-  }
 }
 #pp3 {
   position: relative;
@@ -588,7 +505,7 @@ body {
   }
   .pp_inner {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: flex-start;
     margin-top: 70px;
     .ppcover {
@@ -610,11 +527,11 @@ body {
       width: calc((250px / 1920px) * 100%);
       z-index: 5;
       bottom: calc((90px / 950px) * 100vh);
-      left: calc((870px / 1920px) * 100%);
+      left: calc((840px / 1920px) * 100%);
     }
     .pptxt {
+      width: 38%;
       text-align: left;
-      margin-left: 80px;
       letter-spacing: -2px;
       img {
         height: 40px;
@@ -657,22 +574,6 @@ body {
       }
     }
   }
-  .icon {
-    img {
-      position: absolute;
-    }
-    #ring {
-      top: calc((80px / 950px) * 100vh);
-      left: calc((150px / 1920px) * 100%);
-    }
-    #flower {
-      top: calc((750px / 950px) * 100vh);
-      right: calc((250px / 1920px) * 100%);
-    }
-  }
-  .icon_mobile {
-    display: none;
-  }
 }
 #pp4 {
   position: relative;
@@ -690,7 +591,7 @@ body {
   }
   .pp_inner {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: flex-start;
     margin-top: 70px;
     .ppcover {
@@ -707,8 +608,8 @@ body {
       left: 860px;
     }
     .pptxt {
+      width: 38%;
       text-align: left;
-      margin-left: 80px;
       letter-spacing: -2px;
       img {
         width: 200px;
@@ -737,22 +638,6 @@ body {
         font-weight: 300;
       }
     }
-  }
-  .icon {
-    img {
-      position: absolute;
-    }
-    #ring {
-      top: calc((80px / 950px) * 100vh);
-      left: calc((150px / 1920px) * 100%);
-    }
-    #flower {
-      top: calc((750px / 950px) * 100vh);
-      right: calc((250px / 1920px) * 100%);
-    }
-  }
-  .icon_mobile {
-    display: none;
   }
 }
 #contect {
@@ -809,7 +694,7 @@ body {
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1280px) {
   #fp-nav {
     display: none;
   }
@@ -886,16 +771,7 @@ body {
     }
     .profile {
       .profileimg {
-        border: 2px solid $default;
         width: calc((300px / 768px) * 100%);
-        top: calc((200px / 950px) * 100vh);
-        left: calc((60px / 768px) * 100%);
-      }
-      .profileimgbg {
-        border: 2px solid $default;
-        width: calc((300px / 768px) * 100%);
-        top: calc((180px / 950px) * 100vh);
-        left: calc((45px / 768px) * 100%);
       }
     }
     #about3d {
@@ -907,22 +783,21 @@ body {
     }
     .info {
       text-align: left;
-      margin-left: 450px;
-      margin-top: calc((150px / 950px) * 100vh);
+      margin-top: 0;
       letter-spacing: -2px;
       .info_name {
         display: flex;
-        font-size: 43px;
+        font-size: 35px;
       }
       p {
-        font-size: 24px;
+        font-size: 22px;
         margin-bottom: 50px;
       }
       .info_tit {
-        font-size: 24px;
+        font-size: 22px;
         font-weight: 600;
         .info_2depth {
-          font-size: 20px;
+          font-size: 18px;
           font-weight: normal;
           margin-bottom: 50px;
           img {
@@ -930,31 +805,6 @@ body {
           }
         }
       }
-    }
-    .icon {
-      img {
-        position: absolute;
-        z-index: 5;
-      }
-      #heart {
-        top: calc((300px / 950px) * 100vh);
-        left: calc((100px / 1024px) * 100%);
-      }
-      #twinkle {
-        top: calc((300px / 950px) * 100vh);
-        left: calc((380px / 1024px) * 100%);
-      }
-      #star {
-        top: calc((190px / 950px) * 100vh);
-        right: calc((470px / 1024px) * 100%);
-      }
-      #plant {
-        bottom: calc((70px / 950px) * 100vh);
-        right: calc((50px / 1024px) * 100%);
-      }
-    }
-    .icon_mobile {
-      display: none;
     }
   }
   #pp0 {
@@ -1040,22 +890,6 @@ body {
         }
       }
     }
-    .icon {
-      img {
-        position: absolute;
-      }
-      #ring {
-        top: calc((30px / 950px) * 100vh);
-        left: calc((150px / 1024px) * 100%);
-      }
-      #flower {
-        top: calc((810px / 950px) * 100vh);
-        right: calc((390px / 1024px) * 100%);
-      }
-    }
-    .icon_mobile {
-      display: none;
-    }
   }
   #pp1 {
     position: relative;
@@ -1140,22 +974,6 @@ body {
         }
       }
     }
-    .icon {
-      img {
-        position: absolute;
-      }
-      #ring {
-        top: calc((30px / 950px) * 100vh);
-        left: calc((150px / 1024px) * 100%);
-      }
-      #flower {
-        top: calc((810px / 950px) * 100vh);
-        right: calc((390px / 1024px) * 100%);
-      }
-    }
-    .icon_mobile {
-      display: none;
-    }
   }
   #pp2 {
     position: relative;
@@ -1240,22 +1058,6 @@ body {
         }
       }
     }
-    .icon {
-      img {
-        position: absolute;
-      }
-      #ring {
-        top: calc((30px / 950px) * 100vh);
-        left: calc((150px / 1024px) * 100%);
-      }
-      #flower {
-        top: calc((810px / 950px) * 100vh);
-        right: calc((390px / 1024px) * 100%);
-      }
-    }
-    .icon_mobile {
-      display: none;
-    }
   }
   #pp3 {
     position: relative;
@@ -1317,26 +1119,112 @@ body {
           }
         }
         .pp_desc {
-          display: block;
-          font-size: 18px;
+          display: none;
+        }
+        .pp_btn {
+          display: flex;
+          flex-direction: column;
+          margin-top: 10px;
+          width: 300px;
+          button {
+            margin-right: 0;
+            border: 1px solid $default;
+            height: 60px;
+            margin-bottom: 10px;
+            border-radius: 50px;
+            a {
+              font-size: 20px;
+              padding: 0;
+              border: none;
+              border-radius: 0;
+            }
+          }
         }
       }
     }
-    .icon {
-      img {
-        position: absolute;
-      }
-      #ring {
-        top: calc((30px / 950px) * 100vh);
-        left: calc((150px / 1024px) * 100%);
-      }
-      #flower {
-        top: calc((750px / 950px) * 100vh);
-        right: calc((300px / 1024px) * 100%);
-      }
+  }
+  #pp4 {
+    position: relative;
+    height: 100vh;
+    padding: 40px 60px;
+    h2 {
+      font-size: 40px;
+      width: 250px;
+      border: 2px solid $default;
     }
-    .icon_mobile {
-      display: none;
+    .pp_inner {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      margin-top: 30px;
+      .ppcover {
+        width: 100%;
+        height: calc((460px / 950px) * 100vh);
+        border: 1px solid $default;
+        border-radius: 20px;
+        overflow: hidden;
+        img {
+          width: 100%;
+          transition: transform 0.8s ease;
+        }
+        &:hover img {
+          transform: translateY(-545px);
+        }
+      }
+      .pp3d {
+        position: absolute;
+        width: calc((200px / 1024px) * 100%);
+        z-index: 5;
+        top: calc((70px / 950px) * 100vh);
+        left: calc((360px / 480px) * 100%);
+      }
+      .pptxt {
+        margin-left: 0;
+        margin-top: 30px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        img {
+          height: 20px;
+        }
+        h3 {
+          font-size: 25px;
+          font-weight: 600;
+        }
+        ul {
+          padding: 10px 0 30px 0;
+          li {
+            display: flex;
+            font-size: 18px;
+            strong {
+              margin-right: 16px;
+            }
+          }
+        }
+        .pp_desc {
+          display: none;
+        }
+        .pp_btn {
+          display: flex;
+          flex-direction: column;
+          margin-top: 10px;
+          width: 300px;
+          button {
+            margin-right: 0;
+            border: 1px solid $default;
+            height: 60px;
+            margin-bottom: 10px;
+            border-radius: 50px;
+            a {
+              font-size: 20px;
+              padding: 0;
+              border: none;
+              border-radius: 0;
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -1367,86 +1255,30 @@ body {
     }
   }
   #about {
-    position: relative;
     height: 100vh;
-    padding: 40px 60px;
+    padding: 60px 30px;
     h2 {
-      font-size: 30px;
-      width: 200px;
+      font-size: 23px;
+      width: 150px;
       border: 2px solid $default;
     }
-    .profile {
-      .profileimg {
-        border: 2px solid $default;
-        width: calc((300px / 768px) * 100%);
-        top: calc((150px / 950px) * 100vh);
-        left: calc((80px / 768px) * 100%);
-      }
-      .profileimgbg {
-        border: 2px solid $default;
-        width: calc((300px / 768px) * 100%);
-        top: calc((130px / 950px) * 100vh);
-        left: calc((60px / 768px) * 100%);
+    .profileimg {
+      display: none;
+    }
+    .info {
+      margin-top: -90px;
+      margin-left: 0 !important;
+      text-align: center !important;
+      .info_name {
+        justify-content: center;
       }
     }
     #about3d {
-      top: calc((130px / 950px) * 100vh);
-      left: calc((405px / 768px) * 100%);
+      position: static;
+      margin-top: -20px;
       img {
-        width: 300px;
+        width: 250px;
       }
-    }
-    .info {
-      text-align: center;
-      margin-left: 0;
-      margin-top: calc((365px / 950px) * 100vh);
-      letter-spacing: -2px;
-      .info_name {
-        display: flex;
-        justify-content: center;
-        font-size: 40px;
-      }
-      p {
-        font-size: 24px;
-        margin-bottom: 20px;
-      }
-      .info_tit {
-        font-size: 24px;
-        font-weight: 600;
-        .info_2depth {
-          font-size: 20px;
-          font-weight: normal;
-          margin-bottom: 20px;
-          img {
-            width: 40px;
-          }
-        }
-      }
-    }
-    .icon {
-      img {
-        position: absolute;
-        z-index: 5;
-      }
-      #heart {
-        top: calc((550px / 950px) * 100vh);
-        left: calc((80px / 768px) * 100%);
-      }
-      #twinkle {
-        top: calc((200px / 950px) * 100vh);
-        left: calc((290px / 768px) * 100%);
-      }
-      #star {
-        top: calc((400px / 950px) * 100vh);
-        right: calc((180px / 768px) * 100%);
-      }
-      #plant {
-        bottom: calc((50px / 950px) * 100vh);
-        right: calc((30px / 768px) * 100%);
-      }
-    }
-    .icon_mobile {
-      display: none;
     }
   }
   #pp0 {
@@ -1531,22 +1363,6 @@ body {
         }
       }
     }
-    .icon {
-      img {
-        position: absolute;
-      }
-      #ring {
-        top: calc((30px / 950px) * 100vh);
-        left: calc((120px / 768px) * 100%);
-      }
-      #flower {
-        top: calc((60px / 950px) * 100vh);
-        right: calc((100px / 768px) * 100%);
-      }
-    }
-    .icon_mobile {
-      display: none;
-    }
   }
   #pp1 {
     position: relative;
@@ -1629,22 +1445,6 @@ body {
           }
         }
       }
-    }
-    .icon {
-      img {
-        position: absolute;
-      }
-      #ring {
-        top: calc((30px / 950px) * 100vh);
-        left: calc((120px / 768px) * 100%);
-      }
-      #flower {
-        top: calc((60px / 950px) * 100vh);
-        right: calc((100px / 768px) * 100%);
-      }
-    }
-    .icon_mobile {
-      display: none;
     }
   }
   #pp2 {
@@ -1729,22 +1529,6 @@ body {
         }
       }
     }
-    .icon {
-      img {
-        position: absolute;
-      }
-      #ring {
-        top: calc((30px / 950px) * 100vh);
-        left: calc((120px / 768px) * 100%);
-      }
-      #flower {
-        top: calc((60px / 950px) * 100vh);
-        right: calc((100px / 768px) * 100%);
-      }
-    }
-    .icon_mobile {
-      display: none;
-    }
   }
   #pp3 {
     position: relative;
@@ -1763,12 +1547,16 @@ body {
       margin-top: 30px;
       .ppcover {
         width: 100%;
-        height: calc((360px / 950px) * 100vh);
+        height: calc((300px / 950px) * 100vh);
         border: 1px solid $default;
         border-radius: 20px;
         overflow: hidden;
         img {
           width: 100%;
+          transition: transform 0.8s ease;
+        }
+        &:hover img {
+          transform: translateY(-460px);
         }
       }
       .pp3d {
@@ -1776,7 +1564,7 @@ body {
         width: calc((130px / 480px) * 100%);
         z-index: 5;
         top: calc((300px / 950px) * 100vh);
-        left: calc((320px / 480px) * 100%);
+        left: calc((340px / 480px) * 100%);
       }
       .pptxt {
         margin-left: 0;
@@ -1801,26 +1589,111 @@ body {
           }
         }
         .pp_desc {
-          display: block;
-          font-size: 18px;
+          display: none;
+        }
+        .pp_btn {
+          display: flex;
+          flex-direction: column;
+          margin-top: 10px;
+          width: 100%;
+          button {
+            margin-right: 0;
+            border: 1px solid $default;
+            height: 50px;
+            margin-bottom: 10px;
+            border-radius: 50px;
+            a {
+              font-size: 20px;
+              padding: 0;
+              border: none;
+              border-radius: 0;
+            }
+          }
         }
       }
     }
-    .icon {
-      img {
-        position: absolute;
-      }
-      #ring {
-        top: calc((30px / 950px) * 100vh);
-        left: calc((120px / 768px) * 100%);
-      }
-      #flower {
-        top: calc((60px / 950px) * 100vh);
-        right: calc((100px / 768px) * 100%);
-      }
+  }
+  #pp4 {
+    position: relative;
+    height: 100vh;
+    padding: 40px 60px;
+    h2 {
+      font-size: 30px;
+      width: 200px;
+      border: 2px solid $default;
     }
-    .icon_mobile {
-      display: none;
+    .pp_inner {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      margin-top: 30px;
+      .ppcover {
+        width: 100%;
+        height: calc((300px / 950px) * 100vh);
+        border: 1px solid $default;
+        border-radius: 20px;
+        overflow: hidden;
+        img {
+          width: 100%;
+          transition: transform 0.8s ease;
+        }
+        &:hover img {
+          transform: translateY(-460px);
+        }
+      }
+      .pp3d {
+        position: absolute;
+        width: calc((130px / 480px) * 100%);
+        z-index: 5;
+        top: calc((300px / 950px) * 100vh);
+        left: calc((340px / 480px) * 100%);
+      }
+      .pptxt {
+        margin-left: 0;
+        margin-top: 30px;
+        width: 100%;
+        flex-direction: column;
+        img {
+          height: 20px;
+        }
+        h3 {
+          font-size: 25px;
+          font-weight: 600;
+        }
+        ul {
+          padding: 10px 0 30px 0;
+          li {
+            display: flex;
+            font-size: 18px;
+            strong {
+              margin-right: 16px;
+            }
+          }
+        }
+        .pp_desc {
+          display: none;
+        }
+        .pp_btn {
+          display: flex;
+          flex-direction: column;
+          margin-top: 10px;
+          width: 100%;
+          button {
+            margin-right: 0;
+            border: 1px solid $default;
+            height: 50px;
+            margin-bottom: 10px;
+            border-radius: 50px;
+            a {
+              font-size: 20px;
+              padding: 0;
+              border: none;
+              border-radius: 0;
+            }
+          }
+        }
+      }
     }
   }
   #contect {
@@ -1983,42 +1856,32 @@ body {
       width: 150px;
       border: 2px solid $default;
     }
-    .profile {
+    .profileimg {
       display: none;
+    }
+    .info {
+      margin-top: -90px;
+      margin-left: 0 !important;
+      text-align: center !important;
+      .info_name {
+        justify-content: center;
+        font-size: 30px !important;
+      }
+      .info_tit {
+        font-size: 20px !important;
+      }
+      .info_2depth {
+        font-size: 16px !important;
+      }
+      img {
+        width: 40px !important;
+      }
     }
     #about3d {
       position: static;
       margin-top: -20px;
       img {
-        width: 300px;
-      }
-    }
-    .info {
-      margin-top: -40px;
-    }
-    .icon {
-      display: none;
-    }
-    .icon_mobile {
-      display: block;
-      img {
-        position: absolute;
-      }
-      #aheart {
-        top: calc((80px / 950px) * 100vh);
-        left: calc((50px / 480px) * 100%);
-      }
-      #astar {
-        top: calc((670px / 950px) * 100vh);
-        left: calc((100px / 480px) * 100%);
-      }
-      #atwinkle {
-        top: calc((330px / 950px) * 100vh);
-        left: calc((370px / 480px) * 100%);
-      }
-      #aplant {
-        top: calc((780px / 950px) * 100vh);
-        left: calc((340px / 480px) * 100%);
+        width: 250px;
       }
     }
   }
@@ -2103,27 +1966,6 @@ body {
         }
       }
     }
-    .icon {
-      display: none;
-    }
-    .icon_mobile {
-      display: block;
-      img {
-        position: absolute;
-      }
-      #pflower {
-        top: calc((50px / 950px) * 100vh);
-        left: calc((60px / 480px) * 100%);
-      }
-      #ptwinkle {
-        top: calc((860px / 950px) * 100vh);
-        left: calc((100px / 480px) * 100%);
-      }
-      #parrow {
-        top: calc((630px / 950px) * 100vh);
-        left: calc((380px / 480px) * 100%);
-      }
-    }
   }
   #pp1 {
     position: relative;
@@ -2204,27 +2046,6 @@ body {
             }
           }
         }
-      }
-    }
-    .icon {
-      display: none;
-    }
-    .icon_mobile {
-      display: block;
-      img {
-        position: absolute;
-      }
-      #pflower {
-        top: calc((50px / 950px) * 100vh);
-        left: calc((60px / 480px) * 100%);
-      }
-      #ptwinkle {
-        top: calc((860px / 950px) * 100vh);
-        left: calc((100px / 480px) * 100%);
-      }
-      #parrow {
-        top: calc((630px / 950px) * 100vh);
-        left: calc((380px / 480px) * 100%);
       }
     }
   }
@@ -2309,27 +2130,6 @@ body {
         }
       }
     }
-    .icon {
-      display: none;
-    }
-    .icon_mobile {
-      display: block;
-      img {
-        position: absolute;
-      }
-      #pflower {
-        top: calc((50px / 950px) * 100vh);
-        left: calc((60px / 480px) * 100%);
-      }
-      #ptwinkle {
-        top: calc((860px / 950px) * 100vh);
-        left: calc((100px / 480px) * 100%);
-      }
-      #parrow {
-        top: calc((630px / 950px) * 100vh);
-        left: calc((380px / 480px) * 100%);
-      }
-    }
   }
   #pp3 {
     position: relative;
@@ -2389,19 +2189,6 @@ body {
           display: block;
           font-size: 16px;
         }
-      }
-    }
-    .icon {
-      display: none;
-    }
-    .icon_mobile {
-      display: block;
-      img {
-        position: absolute;
-      }
-      #pflower {
-        top: calc((50px / 950px) * 100vh);
-        left: calc((60px / 480px) * 100%);
       }
     }
   }
