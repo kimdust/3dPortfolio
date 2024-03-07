@@ -1307,7 +1307,7 @@ body {
           transition: transform 3s ease;
         }
         &:hover img {
-          transform: translateY(-1750px);
+          transform: translateY(-990px);
         }
       }
       .pp3d {
@@ -1390,7 +1390,7 @@ body {
           transition: transform 3s ease;
         }
         &:hover img {
-          transform: translateY(-1750px);
+          transform: translateY(-390px);
         }
       }
       .pp3d {
@@ -1470,10 +1470,10 @@ body {
         overflow: hidden;
         img {
           width: 100%;
-          transition: transform 0.8s ease;
+          transition: transform 4s ease;
         }
         &:hover img {
-          transform: translateY(-460px);
+          transform: translateY(-1620px);
         }
       }
       .pp3d {
@@ -1553,10 +1553,10 @@ body {
         overflow: hidden;
         img {
           width: 100%;
-          transition: transform 0.8s ease;
+          transition: transform 2s ease;
         }
         &:hover img {
-          transform: translateY(-460px);
+          transform: translateY(-410px);
         }
       }
       .pp3d {
@@ -2132,6 +2132,66 @@ body {
     }
   }
   #pp3 {
+    position: relative;
+    height: 100vh;
+    padding: 60px 30px;
+    margin-top: 0;
+    h2 {
+      font-size: 23px;
+      width: 150px;
+      border: 2px solid $default;
+    }
+    .pp_inner {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      margin-top: 30px;
+      .ppcover {
+        width: 100%;
+        height: calc((260px / 950px) * 100vh);
+        border: 1px solid $default;
+        border-radius: 20px;
+        overflow: hidden;
+        img {
+          width: 100%;
+        }
+      }
+      .pp3d {
+        position: absolute;
+        width: calc((130px / 480px) * 100%);
+        z-index: 5;
+        top: calc((300px / 950px) * 100vh);
+        left: calc((320px / 480px) * 100%);
+      }
+      .pptxt {
+        margin-left: 0;
+        margin-top: 30px;
+        width: 100%;
+        img {
+          height: 20px;
+        }
+        h3 {
+          font-size: 25px;
+          font-weight: 600;
+        }
+        ul {
+          padding: 10px 0 30px 0;
+          li {
+            display: flex;
+            font-size: 18px;
+            strong {
+              margin-right: 16px;
+            }
+          }
+        }
+        .pp_desc {
+          display: none;
+        }
+      }
+    }
+  }
+  #pp4 {
     position: relative;
     height: 100vh;
     padding: 60px 30px;
