@@ -283,7 +283,7 @@ body {
         font-weight: 600;
       }
       ul {
-        padding: 30px 0 130px 0;
+        padding: 30px 0 90px 0;
         li {
           display: flex;
           font-size: 22px;
@@ -369,7 +369,7 @@ body {
         font-weight: 600;
       }
       ul {
-        padding: 30px 0 100px 0;
+        padding: 30px 0 60px 0;
         li {
           display: flex;
           font-size: 22px;
@@ -455,7 +455,7 @@ body {
         font-weight: 600;
       }
       ul {
-        padding: 30px 0 60px 0;
+        padding: 30px 0 30px 0;
         li {
           display: flex;
           font-size: 22px;
@@ -541,7 +541,7 @@ body {
         font-weight: 600;
       }
       ul {
-        padding: 30px 0 60px 0;
+        padding: 30px 0 30px 0;
         li {
           display: flex;
           font-size: 22px;
@@ -686,11 +686,6 @@ body {
         }
       }
     }
-  }
-  .icon {
-  }
-  .icon_mobile {
-    display: none;
   }
 }
 
@@ -877,7 +872,7 @@ body {
           button {
             margin-right: 0;
             border: 1px solid $default;
-            height: 60px;
+            height: 70px;
             margin-bottom: 10px;
             border-radius: 50px;
             a {
@@ -961,7 +956,7 @@ body {
           button {
             margin-right: 0;
             border: 1px solid $default;
-            height: 60px;
+            height: 70px;
             margin-bottom: 10px;
             border-radius: 50px;
             a {
@@ -1034,6 +1029,7 @@ body {
             }
           }
         }
+
         .pp_desc {
           display: none;
         }
@@ -1045,7 +1041,7 @@ body {
           button {
             margin-right: 0;
             border: 1px solid $default;
-            height: 60px;
+            height: 70px;
             margin-bottom: 10px;
             border-radius: 50px;
             a {
@@ -1129,7 +1125,7 @@ body {
           button {
             margin-right: 0;
             border: 1px solid $default;
-            height: 60px;
+            height: 70px;
             margin-bottom: 10px;
             border-radius: 50px;
             a {
@@ -1516,7 +1512,7 @@ body {
           button {
             margin-right: 0;
             border: 1px solid $default;
-            height: 50px;
+            height: 40px;
             margin-bottom: 10px;
             border-radius: 50px;
             a {
@@ -1599,7 +1595,7 @@ body {
           button {
             margin-right: 0;
             border: 1px solid $default;
-            height: 50px;
+            height: 40px;
             margin-bottom: 10px;
             border-radius: 50px;
             a {
@@ -1734,8 +1730,7 @@ body {
         }
       }
     }
-    .icon {
-    }
+
     .icon_mobile {
       display: none;
     }
@@ -2117,7 +2112,7 @@ body {
           button {
             margin-right: 0;
             border: 1px solid $default;
-            height: 50px;
+            height: 40px;
             margin-bottom: 10px;
             border-radius: 50px;
             a {
@@ -2187,6 +2182,24 @@ body {
         }
         .pp_desc {
           display: none;
+        }
+      }
+      .pp_btn {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        button {
+          margin-right: 0;
+          border: 1px solid $default;
+          height: 40px;
+          margin-bottom: 10px;
+          border-radius: 50px;
+          a {
+            font-size: 20px;
+            padding: 0;
+            border: none;
+            border-radius: 0;
+          }
         }
       }
     }
